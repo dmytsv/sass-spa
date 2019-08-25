@@ -1,0 +1,77 @@
+.checkbox--switch {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  opacity: 0;
+  width: 0;
+  height: 0;
+
+  &__slider {
+    position: absolute;
+    top: 1rem;
+    right: 10rem;
+    background: blue;
+    border-radius: 1rem;
+    height: 2rem;
+    width: 4rem;
+    z-index: 50;
+    &::before {
+      content: 'Light Mode';
+      position: absolute;
+      z-index: 40;
+      top: 0;
+      font-size: 1.4rem;
+      display: block;
+      width: 7.5rem;
+      height: 2rem;
+      transform: translateX(-7.5rem);
+    }
+    &::after {
+      content: 'Dark Mode';
+      position: absolute;
+      z-index: 40;
+      top: 0;
+      font-size: 1.4rem;
+      display: block;
+      width: 7.5rem;
+      height: 2rem;
+      transform: translateX(3.8rem);
+      text-align: end;
+    }
+    & .icon {
+      display: block;
+      height: calc(2rem - 2px);
+      width: calc(2rem - 2px);
+      border-radius: 50%;
+      transform: translateX(1px) translateY(1px);
+      transition: transform 0.2s ease-in-out;
+    }
+  }
+  &:checked + &__slider {
+    background: orange;
+    & .icon {
+      transform: translateX(calc(2rem + 1px)) translateY(1px);
+    }
+  }
+  &:not(:checked) ~ * {
+    --background-color: var(--background-light-theme);
+    --text-color: var(--text-light-theme);
+  }
+  &:checked ~ * {
+    --background-color: var(--background-dark-theme);
+    --text-color: var(--text-dark-theme);
+  }
+}
+* {
+  background: var(--background-color);
+  color: var(--text-color);
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+.background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}

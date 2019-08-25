@@ -1,0 +1,9 @@
+@import 'config/init';
+@import 'config/theme';
+@import 'components/nav';
+
+@import 'routes/gallery';
+
+#home:target {
+  font-size: 2rem;
+}

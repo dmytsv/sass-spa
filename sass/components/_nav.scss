@@ -1,0 +1,16 @@
+.navbar {
+  width: 100%;
+  height: 3rem;
+  font-size: 1.6rem;
+
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(min-content, 8rem));
+  align-content: center;
+  align-items: center;
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
