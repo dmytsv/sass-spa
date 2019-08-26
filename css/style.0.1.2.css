@@ -214,7 +214,7 @@ section:not(:target) {
   display: block;
   position: absolute;
   top: 50%;
-  left: 10vw;
+  left: 10vmin;
   font-size: 2rem;
 }
 
@@ -225,8 +225,8 @@ section:not(:target) {
   background: var(--img-url);
   background-size: cover;
   background-position: center;
-  width: 40vw;
-  height: 40vw;
+  width: 70vmin;
+  height: 70vmin;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -238,7 +238,7 @@ section:not(:target) {
   display: block;
   position: absolute;
   top: 50%;
-  right: 10vw;
+  right: 10vmin;
   font-size: 2rem;
 }
 
@@ -255,7 +255,7 @@ section:not(:target) {
   display: block;
   position: absolute;
   top: 50%;
-  right: 10vw;
+  right: 10vmin;
   font-size: 2rem;
 }
 
@@ -266,8 +266,8 @@ section:not(:target) {
   background: var(--img-url);
   background-size: cover;
   background-position: center;
-  width: 40vw;
-  height: 40vw;
+  width: 70vmin;
+  height: 70vmin;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -281,4 +281,4 @@ section:not(:target) {
 #home:target {
   font-size: 2rem;
 }
-/*# sourceMappingURL=style.0.1.1.css.map */
+/*# sourceMappingURL=style.0.1.2.css.map */

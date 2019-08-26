@@ -15,8 +15,8 @@
     display: block;
     position: absolute;
     @include background;
-    width: 40vw;
-    height: 40vw;
+    width: 70vmin;
+    height: 70vmin;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -28,7 +28,7 @@
   display: block;
   position: absolute;
   top: 50%;
-  right: 10vw;
+  right: 10vmin;
   font-size: 2rem;
 }
 @mixin previous {
@@ -36,7 +36,7 @@
   display: block;
   position: absolute;
   top: 50%;
-  left: 10vw;
+  left: 10vmin;
   font-size: 2rem;
 }
 
