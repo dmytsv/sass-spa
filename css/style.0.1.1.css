@@ -157,7 +157,35 @@ section:not(:target) {
 }
 
 :root {
-  --url-test: url('https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80');
+  --img-url: url('https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80');
+}
+
+.gallery__label--0, .gallery__image--0 {
+  --img-url: url('https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+}
+
+.gallery__label--1, .gallery__image--1 {
+  --img-url: url('https://images.unsplash.com/photo-1453785675141-67637e2d4b5c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1418&q=80');
+}
+
+.gallery__label--2, .gallery__image--2 {
+  --img-url: url('https://images.unsplash.com/photo-1444465693019-aa0b6392460d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+}
+
+.gallery__label--3, .gallery__image--3 {
+  --img-url: url('https://images.unsplash.com/photo-1500829243541-74b677fecc30?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1355&q=80');
+}
+
+.gallery__label--4, .gallery__image--4 {
+  --img-url: url('https://images.unsplash.com/photo-1453785675141-67637e2d4b5c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1418&q=80');
+}
+
+.gallery__label--5, .gallery__image--5 {
+  --img-url: url('https://images.unsplash.com/photo-1504567961542-e24d9439a724?ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80');
+}
+
+.gallery__label--6, .gallery__image--6 {
+  --img-url: url('https://images.unsplash.com/photo-1500534623283-312aade485b7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
 }
 
 .gallery__radio {
@@ -166,50 +194,60 @@ section:not(:target) {
 
 .gallery__radio + label {
   display: inline-block;
-  background: beige;
+  background: var(--img-url);
+  background-size: cover;
+  background-position: center;
   width: 10rem;
   height: 10rem;
 }
 
-.gallery__radio:checked:not(:first-of-type) + label + span + input + label {
-  background: bisque;
+.gallery__radio:checked:not(:first-of-type):not(:last-of-type) + label + span + input + label {
+  background: var(--img-url);
+  background-size: cover;
+  background-position: center;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
 }
 
-.gallery__radio:checked:not(:first-of-type) + label::before {
+.gallery__radio:checked:not(:first-of-type):not(:last-of-type) + label::before {
   content: 'previous';
   display: block;
   position: absolute;
   top: 50%;
-  left: 40rem;
+  left: 10vw;
   font-size: 2rem;
 }
 
-.gallery__radio:checked + label + span::before {
+.gallery__radio:checked:not(:last-of-type) + label + span + input + label + span::before {
   content: '';
   display: block;
   position: absolute;
-  background: var(--url-test);
-  -o-object-fit: scale-down;
-     object-fit: scale-down;
-  width: 40rem;
-  height: 40rem;
+  background: var(--img-url);
+  background-size: cover;
+  background-position: center;
+  width: 40vw;
+  height: 40vw;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
 
-.gallery__radio:checked + label + span + input + label + span + input + label::before {
+.gallery__radio:checked:not(:last-of-type) + label + span + input + label + span + input + label::before {
   content: 'next';
   display: block;
   position: absolute;
   top: 50%;
-  right: 40rem;
+  right: 10vw;
   font-size: 2rem;
 }
 
 .gallery__radio:first-of-type:checked + input + label {
-  background: bisque;
+  background: var(--img-url);
+  background-size: cover;
+  background-position: center;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
 }
 
 .gallery__radio:first-of-type:checked + input + label + span + input + label::before {
@@ -217,7 +255,7 @@ section:not(:target) {
   display: block;
   position: absolute;
   top: 50%;
-  right: 40rem;
+  right: 10vw;
   font-size: 2rem;
 }
 
@@ -225,11 +263,11 @@ section:not(:target) {
   content: '';
   display: block;
   position: absolute;
-  background: var(--url-test);
-  -o-object-fit: scale-down;
-     object-fit: scale-down;
-  width: 40rem;
-  height: 40rem;
+  background: var(--img-url);
+  background-size: cover;
+  background-position: center;
+  width: 40vw;
+  height: 40vw;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -243,4 +281,4 @@ section:not(:target) {
 #home:target {
   font-size: 2rem;
 }
-/*# sourceMappingURL=style.0.1.css.map */
+/*# sourceMappingURL=style.0.1.1.css.map */
