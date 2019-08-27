@@ -7,6 +7,7 @@
   height: 0;
 
   &__slider {
+    cursor: pointer;
     position: absolute;
     top: 1rem;
     right: 10rem;
@@ -14,11 +15,11 @@
     border-radius: 1rem;
     height: 2rem;
     width: 4rem;
-    z-index: 50;
+    z-index: 150;
     &::before {
       content: 'Light Mode';
       position: absolute;
-      z-index: 40;
+      z-index: 140;
       top: 0;
       font-size: 1.4rem;
       display: block;
@@ -29,7 +30,7 @@
     &::after {
       content: 'Dark Mode';
       position: absolute;
-      z-index: 40;
+      z-index: 140;
       top: 0;
       font-size: 1.4rem;
       display: block;
