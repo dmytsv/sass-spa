@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Sass SPA Project</title>
-    <link rel="stylesheet" href="./css/style.0.1.3.min.css" />
+    <link rel="stylesheet" href="./css/style.0.1.4.min.css" />
   </head>
   <body>
     <input id="theme-switch" class="checkbox--switch" type="checkbox" />
@@ -20,6 +20,53 @@
       Home Section Content to be added...
     </section>
     <section id="gallery" class="gallery">
+      <!-- Image theme selector -->
+      <input
+        checked
+        class="gallery__switch__radio"
+        type="radio"
+        name="gallery__switch"
+        id="gallery__switch--nature"
+      />
+      <input
+        class="gallery__switch__radio"
+        type="radio"
+        name="gallery__switch"
+        id="gallery__switch--city"
+      />
+      <input
+        class="gallery__switch__radio"
+        type="radio"
+        name="gallery__switch"
+        id="gallery__switch--animals"
+      />
+      <input
+        class="gallery__switch__radio"
+        type="radio"
+        name="gallery__switch"
+        id="gallery__switch--people"
+      />
+
+      <label
+        class="gallery__switch__label gallery__switch__label--nature"
+        for="gallery__switch--nature"
+        >Nature</label
+      >
+      <label class="gallery__switch__label gallery__switch__label--city" for="gallery__switch--city"
+        >City</label
+      >
+      <label
+        class="gallery__switch__label gallery__switch__label--animals"
+        for="gallery__switch--animals"
+        >Animals</label
+      >
+      <label
+        class="gallery__switch__label gallery__switch__label--people"
+        for="gallery__switch--people"
+        >People</label
+      >
+
+      <!-- Gallery -->
       <input class="gallery__radio" type="radio" name="gallery" id="gallery-0" />
       <input class="gallery__radio" type="radio" name="gallery" id="gallery-1" />
       <label class="gallery__label gallery__label--0" for="gallery-0">0</label>
