@@ -164,10 +164,10 @@ section:not(:target) {
 .gallery {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr (minmax(20vmin, 25vmin))[4] 1fr;
-      grid-template-columns: 1fr repeat(4, minmax(20vmin, 25vmin)) 1fr;
-  -ms-grid-rows: 1fr (minmax(20vmin, 20vmin))[4] 1fr;
-      grid-template-rows: 1fr repeat(4, minmax(20vmin, 20vmin)) 1fr;
+  -ms-grid-columns: 1fr (20vmin)[4] 1fr;
+      grid-template-columns: 1fr repeat(4, 20vmin) 1fr;
+  -ms-grid-rows: 1fr (20vmin)[4] 1fr;
+      grid-template-rows: 1fr repeat(4, 20vmin) 1fr;
   grid-gap: 2rem;
 }
 
@@ -471,7 +471,7 @@ section:not(:target) {
   background: var(--img-url);
   background-size: cover;
   background-position: center;
-  background-size: 100% auto;
+  background-size: contain;
   background-repeat: no-repeat;
   width: 85vmin;
   height: 85vmin;
@@ -549,7 +549,7 @@ section:not(:target) {
   background: var(--img-url);
   background-size: cover;
   background-position: center;
-  background-size: 100% auto;
+  background-size: contain;
   background-repeat: no-repeat;
   width: 85vmin;
   height: 85vmin;
@@ -583,4 +583,4 @@ section:not(:target) {
 #home:target {
   font-size: 2rem;
 }
-/*# sourceMappingURL=style.0.1.4.css.map */
+/*# sourceMappingURL=style.0.1.5.css.map */

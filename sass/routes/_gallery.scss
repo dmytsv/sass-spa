@@ -25,7 +25,7 @@ $people-check: '#gallery__switch--people:checked ~ ';
     display: block;
     position: absolute;
     @include background;
-    background-size: 100% auto;
+    background-size: contain;
     background-repeat: no-repeat;
     width: 85vmin;
     height: 85vmin;
@@ -327,8 +327,8 @@ $people-check: '#gallery__switch--people:checked ~ ';
   }
 
   display: grid;
-  grid-template-columns: 1fr repeat(4, minmax(20vmin, 25vmin)) 1fr;
-  grid-template-rows: 1fr repeat(4, minmax(20vmin, 20vmin)) 1fr;
+  grid-template-columns: 1fr repeat(4, 20vmin) 1fr;
+  grid-template-rows: 1fr repeat(4, 20vmin) 1fr;
   grid-gap: 2rem;
 
   &__label,
