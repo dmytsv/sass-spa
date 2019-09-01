@@ -11,7 +11,7 @@
     position: absolute;
     top: 1rem;
     right: 10rem;
-    background: blue;
+    background: var(--main-light-theme);
     border-radius: 1rem;
     height: 2rem;
     width: 4rem;
@@ -49,17 +49,19 @@
     }
   }
   &:checked + &__slider {
-    background: orange;
+    background: var(--main-dark-theme);
     & .icon {
       transform: translateX(calc(2rem + 1px)) translateY(1px);
     }
   }
   &:not(:checked) ~ * {
     --background-color: var(--background-light-theme);
+    --main-color: var(--main-light-theme);
     --text-color: var(--text-light-theme);
   }
   &:checked ~ * {
     --background-color: var(--background-dark-theme);
+    --main-color: var(--main-dark-theme);
     --text-color: var(--text-dark-theme);
   }
 }

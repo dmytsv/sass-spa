@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Sass SPA Project</title>
-    <link rel="stylesheet" href="./css/style.0.1.5.min.css" />
+    <link rel="stylesheet" href="./css/style.0.1.6.min.css" />
   </head>
   <body>
     <input id="theme-switch" class="checkbox--switch" type="checkbox" />
@@ -17,7 +17,51 @@
     </nav>
     <span class="background"></span>
     <section id="home">
-      Home Section Content to be added...
+      <input
+        checked
+        class="home__switch__radio"
+        type="radio"
+        name="home__switch"
+        id="home__switch--1"
+      />
+      <input class="home__switch__radio" type="radio" name="home__switch" id="home__switch--2" />
+      <input class="home__switch__radio" type="radio" name="home__switch" id="home__switch--3" />
+      <input class="home__switch__radio" type="radio" name="home__switch" id="home__switch--4" />
+      <input class="home__switch__radio" type="radio" name="home__switch" id="home__switch--5" />
+      <input class="home__switch__radio" type="radio" name="home__switch" id="home__switch--6" />
+
+      <label class="home__switch__label home__switch__label--1" for="home__switch--1"
+        ><i></i
+      ></label>
+      <label class="home__switch__label home__switch__label--2" for="home__switch--2"
+        ><i></i
+      ></label>
+      <label class="home__switch__label home__switch__label--3" for="home__switch--3"
+        ><i></i
+      ></label>
+      <label class="home__switch__label home__switch__label--4" for="home__switch--4"
+        ><i></i
+      ></label>
+      <label class="home__switch__label home__switch__label--5" for="home__switch--5"
+        ><i></i
+      ></label>
+      <label class="home__switch__label home__switch__label--6" for="home__switch--6"
+        ><i></i
+      ></label>
+
+      <div class="home__container">
+        <span class="home__image home__image--1"
+          ><span class="home__image--text">SASS/CSS Based Single Page App</span></span
+        >
+        <span class="home__image home__image--2"
+          ><span class="home__image--text">Build with ❤️ and a lot of ☕️</span></span
+        >
+        <span class="home__image home__image--3"
+          ><span class="home__image--text"
+            >Using SASS, CSS Grid and all the cool stuff 😎</span
+          ></span
+        >
+      </div>
     </section>
     <section id="gallery" class="gallery">
       <!-- Image theme selector -->

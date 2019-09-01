@@ -7,7 +7,7 @@ $animals-check: '#gallery__switch--animals:checked ~ ';
 $people-check: '#gallery__switch--people:checked ~ ';
 
 @mixin background {
-  background: var(--img-url);
+  background-image: var(--img-url);
   background-size: cover;
   background-position: center;
 }
@@ -21,14 +21,21 @@ $people-check: '#gallery__switch--people:checked ~ ';
   left: 50%;
   z-index: 90;
   &::before {
+    // content: var(--img-url);
+    // display: grid;
+    // justify-content: center;
+    // align-content: center;
+    // max-width: 80vmin;
+    // max-height: 80vmin;
     content: '';
     display: block;
-    position: absolute;
     @include background;
     background-size: contain;
     background-repeat: no-repeat;
-    width: 85vmin;
-    height: 85vmin;
+    width: 80vmin;
+    height: 80vmin;
+    // ^^ test this code ^^
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
