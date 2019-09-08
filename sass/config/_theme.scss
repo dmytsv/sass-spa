@@ -16,6 +16,10 @@
     height: 2rem;
     width: 4rem;
     z-index: 150;
+    &:active,
+    &:focus {
+      background-color: var(--secondary-light-theme);
+    }
     &::before {
       content: 'Light Mode';
       position: absolute;
@@ -48,20 +52,29 @@
       transition: transform 0.2s ease-in-out;
     }
   }
+
   &:checked + &__slider {
     background: var(--main-dark-theme);
+    &:active,
+    &:focus {
+      background-color: var(--secondary-dark-theme);
+    }
     & .icon {
       transform: translateX(calc(2rem + 1px)) translateY(1px);
     }
   }
   &:not(:checked) ~ * {
     --background-color: var(--background-light-theme);
+    --background-secondary-color: var(--background-secondary-light-theme);
     --main-color: var(--main-light-theme);
+    --secondary-color: var(--secondary-light-theme);
     --text-color: var(--text-light-theme);
   }
   &:checked ~ * {
     --background-color: var(--background-dark-theme);
+    --background-secondary-color: var(--background-secondary-dark-theme);
     --main-color: var(--main-dark-theme);
+    --secondary-color: var(--secondary-dark-theme);
     --text-color: var(--text-dark-theme);
   }
 }

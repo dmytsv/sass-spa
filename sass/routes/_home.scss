@@ -20,6 +20,11 @@ $shadow-width: 0.3rem;
   background-color: var(--background-color);
   align-self: center;
   justify-self: center;
+  &:active,
+  &:focus {
+    background-color: var(--secondary-color);
+    border: solid $shadow-width var(--secondary-color);
+  }
 }
 
 #home:target {
@@ -81,10 +86,7 @@ $shadow-width: 0.3rem;
     display: grid;
     justify-content: center;
     align-content: center;
-    &:active,
-    &:focus {
-      background-color: var(--main-color);
-    }
+
     &:hover {
       cursor: pointer;
     }

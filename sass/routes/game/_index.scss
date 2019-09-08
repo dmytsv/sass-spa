@@ -1,0 +1,80 @@
+@import 'game-mixins';
+#game:target {
+  display: grid;
+  grid-template-rows: 20vh repeat(3, 20vh) 1fr;
+  grid-auto-rows: 1.5rem;
+  grid-template-columns: 1fr repeat(3, 20vh) 1fr;
+  --animation-interval: 0.1s;
+  --animation-delay-1: 0s;
+  --animation-delay-2: 0.2s;
+  --animation-delay-3: 0.4s;
+  .game__switch__radio {
+    /** Uncomment for prod */
+    // display: none;
+  }
+  label {
+    display: none;
+    transition: none;
+  }
+  i {
+    transition: none;
+    font-style: normal;
+  }
+  // Start
+  #game__switch--000_000_000:checked ~ .game__tile--1 {
+    @include tile($top, $left);
+  }
+  #game__switch--000_000_000:checked ~ .game__tile--2 {
+    @include tile($top, $center);
+  }
+  #game__switch--000_000_000:checked ~ .game__tile--3 {
+    @include tile($top, $right);
+  }
+  #game__switch--000_000_000:checked ~ .game__tile--4 {
+    @include tile($center, $left);
+  }
+  #game__switch--000_000_000:checked ~ .game__tile--5 {
+    @include tile($center, $center);
+  }
+  #game__switch--000_000_000:checked ~ .game__tile--6 {
+    @include tile($center, $right);
+  }
+  #game__switch--000_000_000:checked ~ .game__tile--7 {
+    @include tile($bottom, $left);
+  }
+  #game__switch--000_000_000:checked ~ .game__tile--8 {
+    @include tile($bottom, $center);
+  }
+  #game__switch--000_000_000:checked ~ .game__tile--9 {
+    @include tile($bottom, $right);
+  }
+  #game__switch--000_000_000:checked ~ .game__switch__label--000_010_000 {
+    @include massage($start);
+  }
+  // 1st
+  // 1 row
+  @include top-left('000_010_000', '200_010_003');
+  @include top-center('000_010_000', '320_010_000');
+  @include top-right('000_010_000', '002_010_300');
+  // 2 row
+  @include center-left('000_010_000', '300_210_000');
+  @include center-center('000_010_000');
+  @include center-right('000_010_000', '003_012_000');
+  // 3 row
+  @include bottom-left('000_010_000', '003_010_200');
+  @include bottom-center('000_010_000', '000_010_320');
+  @include bottom-right('000_010_000', '300_010_002');
+
+  // Branches
+  // 1st row
+  @import '200_010_003';
+  @import '320_010_000';
+  @import '002_010_300';
+  // 2nd row
+  @import '300_210_000';
+  @import '003_012_000';
+  // 3rd row
+  @import '003_010_200';
+  @import '000_010_320';
+  @import '300_010_002';
+}

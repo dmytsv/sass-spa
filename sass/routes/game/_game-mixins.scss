@@ -1,0 +1,411 @@
+@mixin circle {
+  &::before {
+    content: 'O';
+    font-size: 15vh;
+    align-self: center;
+  }
+}
+@mixin cross {
+  &::before {
+    content: 'X';
+    font-size: 15vh;
+    align-self: center;
+  }
+}
+// Message vars
+$win: 'AI Wins!';
+$draw: 'Draw!';
+$start: 'Start';
+@mixin massage($text) {
+  background-color: transparent;
+  grid-column: 2 / 5;
+  grid-row: 2 / 5;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  z-index: 10;
+  &::before {
+    content: $text;
+    color: var(--main-color);
+    text-shadow: 0 0 2rem var(--text-light-theme), 0 0 0.5rem var(--text-light-theme);
+    font-size: 10vh;
+  }
+}
+// Line vars
+$horizontal: 'horizontal';
+$vertical: 'vertical';
+$downwards: 'downwards';
+$upwards: 'upwards';
+$first: 1;
+$middle: 2;
+$last: 3;
+@mixin line($orientation, $row-number: $middle) {
+  background-color: var(--text-color);
+  align-self: center;
+  justify-self: center;
+  z-index: 5;
+  transition: none;
+  @if $row-number == $first {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  } @else if $row-number == $middle {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+  } @else if $row-number == $last {
+    grid-column: 4 / 5;
+    grid-row: 4 / 5;
+  } @else {
+    @error "Unknown row-number #{$row-number}";
+  }
+  // overriding grid-column || grid-row
+  @if $orientation == $horizontal {
+    grid-column: 2 / 5;
+    height: 0.8rem;
+    width: 95%;
+    animation: none;
+    animation: draw-win-line
+      var(--animation-interval)
+      ease-in-out
+      var(--animation-delay-3)
+      1
+      normal
+      both;
+  } @else if $orientation == $vertical {
+    grid-row: 2 / 5;
+    height: 95%;
+    width: 0.8rem;
+    animation: none;
+    animation: draw-win-line
+      var(--animation-interval)
+      ease-in-out
+      var(--animation-delay-3)
+      1
+      normal
+      both;
+  } @else if $orientation == $downwards {
+    grid-column: 2 / 5;
+    height: 0.8rem;
+    width: 125%;
+    transform: rotate(45deg);
+    animation: none;
+    animation: draw-win-line
+      var(--animation-interval)
+      ease-in-out
+      var(--animation-delay-3)
+      1
+      normal
+      both;
+  } @else if $orientation == $upwards {
+    grid-column: 2 / 5;
+    height: 0.8rem;
+    width: 125%;
+    transform: rotate(-45deg);
+    animation: none;
+    animation: draw-win-line
+      var(--animation-interval)
+      ease-in-out
+      var(--animation-delay-3)
+      1
+      normal
+      both;
+  } @else {
+    @error "Unknown orientation #{$orientation}";
+  }
+}
+// tile vars
+$top: 'top';
+$center: 'center';
+$bottom: 'bottom';
+$left: 'left';
+$right: 'right';
+@mixin tile($row, $col) {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  background-color: var(--background-secondary-color);
+  border: 0.3rem solid var(--secondary-color);
+  box-sizing: border-box;
+  @if $row == $top {
+    border-top: none;
+    grid-row: 2 / 3;
+  } @else if $row == $center {
+    grid-row: 3 / 4;
+  } @else if $row == $bottom {
+    border-bottom: none;
+    grid-row: 4 / 5;
+  } @else {
+    @error "Unknown row #{$row}";
+  }
+  @if $col == $left {
+    border-left: none;
+    grid-column: 2 / 3;
+  } @else if $col == $center {
+    grid-column: 3 / 4;
+  } @else if $col == $right {
+    border-right: none;
+    grid-column: 4 / 5;
+  } @else {
+    @error "Unknown row #{$col}";
+  }
+}
+// Helper functions
+@function is-circle($s) {
+  @if $s == '1' or $s == '3' or $s == '5' or $s == '7' or $s == '9' {
+    @return true;
+  }
+  @return false;
+}
+@function is-cross($s) {
+  @if $s == '2' or $s == '4' or $s == '6' or $s == '8' {
+    @return true;
+  }
+  @return false;
+}
+@function is-empty($s) {
+  @return if($s == '0', true, false);
+}
+@function create-selector($id, $tile-num, $child-id: null) {
+  $child-selector: if(
+    not $child-id,
+    'game__tile--#{$tile-num}',
+    'game__switch__label--#{$child-id}'
+  );
+  $selector: '#game__switch--#{$id}:checked ~ .#{$child-selector}';
+  @return $selector;
+}
+@function last-num-turn($id) {
+  $list: ();
+  $i: 1;
+  $item: str-slice($id, $i, $i);
+  @while $item != '' {
+    $list: append($list, $item);
+    $i: $i + 1;
+    $item: str-slice($id, $i, $i);
+  }
+  $num: 9;
+  @while (not index($list, quote($num))) and $num > 0 {
+    $num: $num - 1;
+  }
+  @return $num;
+}
+@function ultimate-turn($id) {
+  @return quote(last-num-turn($id));
+}
+@function penultimate-turn($id) {
+  $last-turn: last-num-turn($id);
+  @return if($last-turn <= 1, null, quote($last-turn - 1));
+}
+@mixin circle-cross($id, $tile-num) {
+  $tile-id: str-slice($id, $tile-num, $tile-num);
+  @if is-circle($tile-id) {
+    @include circle;
+  } @else if is-cross($tile-id) {
+    @include cross;
+  }
+  @if $tile-id == ultimate-turn($id) {
+    &::before {
+      animation: none;
+      animation: draw-cross-circle
+        var(--animation-interval)
+        ease-in-out
+        var(--animation-delay-2)
+        1
+        normal
+        both;
+    }
+  } @else if $tile-id == penultimate-turn($id) {
+    &::before {
+      animation: none;
+      animation: draw-cross-circle
+        var(--animation-interval)
+        ease-in-out
+        var(--animation-delay-1)
+        1
+        normal
+        both;
+    }
+  }
+}
+// Drawing tiles
+@mixin top-left($id, $child-id: null) {
+  $tile-num: 1;
+  $selector: create-selector($id, $tile-num, $child-id);
+  #{$selector} {
+    @include tile($top, $left);
+    @include circle-cross($id, $tile-num);
+    @content;
+  }
+}
+@mixin top-center($id, $child-id: null) {
+  $tile-num: 2;
+  $selector: create-selector($id, $tile-num, $child-id);
+  #{$selector} {
+    @include tile($top, $center);
+    @include circle-cross($id, $tile-num);
+    @content;
+  }
+}
+@mixin top-right($id, $child-id: null) {
+  $tile-num: 3;
+  $selector: create-selector($id, $tile-num, $child-id);
+  #{$selector} {
+    @include tile($top, $right);
+    @include circle-cross($id, $tile-num);
+    @content;
+  }
+}
+$second-row-offset: 1;
+@mixin center-left($id, $child-id: null) {
+  $tile-num: 4;
+  $selector: create-selector($id, $tile-num, $child-id);
+  #{$selector} {
+    @include tile($center, $left);
+    @include circle-cross($id, $tile-num + $second-row-offset);
+    @content;
+  }
+}
+@mixin center-center($id, $child-id: null) {
+  $tile-num: 5;
+  $selector: create-selector($id, $tile-num, $child-id);
+  #{$selector} {
+    @include tile($center, $center);
+    @include circle-cross($id, $tile-num + $second-row-offset);
+    @content;
+  }
+}
+@mixin center-right($id, $child-id: null) {
+  $tile-num: 6;
+  $selector: create-selector($id, $tile-num, $child-id);
+  #{$selector} {
+    @include tile($center, $right);
+    @include circle-cross($id, $tile-num + $second-row-offset);
+    @content;
+  }
+}
+$bottom-row-offset: 2;
+@mixin bottom-left($id, $child-id: null) {
+  $tile-num: 7;
+  $selector: create-selector($id, $tile-num, $child-id);
+  #{$selector} {
+    @include tile($bottom, $left);
+    @include circle-cross($id, $tile-num + $bottom-row-offset);
+    @content;
+  }
+}
+@mixin bottom-center($id, $child-id: null) {
+  $tile-num: 8;
+  $selector: create-selector($id, $tile-num, $child-id);
+  #{$selector} {
+    @include tile($bottom, $center);
+    @include circle-cross($id, $tile-num + $bottom-row-offset);
+    @content;
+  }
+}
+@mixin bottom-right($id, $child-id: null) {
+  $tile-num: 9;
+  $selector: create-selector($id, $tile-num, $child-id);
+  #{$selector} {
+    @include tile($bottom, $right);
+    @include circle-cross($id, $tile-num + $bottom-row-offset);
+    @content;
+  }
+}
+@mixin message-line($id) {
+  $top-left: str-slice($id, 1, 1);
+  $top-center: str-slice($id, 2, 2);
+  $top-right: str-slice($id, 3, 3);
+  $center-left: str-slice($id, 5, 5);
+  $center-center: str-slice($id, 6, 6);
+  $center-right: str-slice($id, 7, 7);
+  $bottom-left: str-slice($id, 9, 9);
+  $bottom-center: str-slice($id, 10, 10);
+  $bottom-right: str-slice($id, 11, 11);
+  // selectors
+  $msg-selector: '#game__switch--#{$id}:checked ~ .game__switch__label--000_000_000';
+  $line-selector: '#game__switch--#{$id}:checked ~ .game__line';
+  // horizontal lines
+  @if is-circle($top-left) and is-circle($top-center) and is-circle($top-right) {
+    #{$msg-selector} {
+      @include massage($win);
+    }
+    #{$line-selector} {
+      @include line($horizontal, $first);
+    }
+  } @else if is-circle($center-left) and is-circle($center-center) and is-circle($center-right) {
+    #{$msg-selector} {
+      @include massage($win);
+    }
+    #{$line-selector} {
+      @include line($horizontal, $middle);
+    }
+  } @else if is-circle($bottom-left) and is-circle($bottom-center) and is-circle($bottom-right) {
+    #{$msg-selector} {
+      @include massage($win);
+    }
+    #{$line-selector} {
+      @include line($horizontal, $last);
+    }
+    // vertical lines
+  } @else if is-circle($top-left) and is-circle($center-left) and is-circle($bottom-left) {
+    #{$msg-selector} {
+      @include massage($win);
+    }
+    #{$line-selector} {
+      @include line($vertical, $first);
+    }
+  } @else if is-circle($top-center) and is-circle($center-center) and is-circle($bottom-center) {
+    #{$msg-selector} {
+      @include massage($win);
+    }
+    #{$line-selector} {
+      @include line($vertical, $middle);
+    }
+  } @else if is-circle($top-right) and is-circle($center-right) and is-circle($bottom-right) {
+    #{$msg-selector} {
+      @include massage($win);
+    }
+    #{$line-selector} {
+      @include line($vertical, $last);
+    }
+    // diagonal lines
+  } @else if is-circle($top-left) and is-circle($center-center) and is-circle($bottom-right) {
+    #{$msg-selector} {
+      @include massage($win);
+    }
+    #{$line-selector} {
+      @include line($downwards);
+    }
+  } @else if is-circle($top-right) and is-circle($center-center) and is-circle($bottom-left) {
+    #{$msg-selector} {
+      @include massage($win);
+    }
+    #{$line-selector} {
+      @include line($upwards);
+    }
+  } @else if ultimate-turn($id) == '9' {
+    #{$msg-selector} {
+      @include massage($draw);
+    }
+  }
+  // end message-line mixin
+}
+@keyframes draw-cross-circle {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes draw-win-line {
+  0% {
+    opacity: 0;
+    // transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    // transform: scale(1);
+  }
+}

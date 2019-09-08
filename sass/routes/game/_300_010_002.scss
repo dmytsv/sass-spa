@@ -1,0 +1,15 @@
+// 300_010_002
+// 1 row
+@include top-left('300_010_002');
+@include top-center('300_010_002');
+@include top-right('300_010_002');
+// 2 row
+@include center-left('300_010_002');
+@include center-center('300_010_002');
+@include center-right('300_010_002');
+// 3 row
+@include bottom-left('300_010_002');
+@include bottom-center('300_010_002');
+@include bottom-right('300_010_002');
+// Message
+@include message-line('300_010_002');
