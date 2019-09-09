@@ -7,93 +7,33 @@
 // 2nd
 // 200_010_003
 // 1 row
-// #game__switch--200_010_003:checked ~ .game__tile--1 {
-//   @include tile($top, $left);
-//   @include cross;
-// }
 @include top-left('200_010_003');
 @include top-center('200_010_003', '245_010_003');
-// #game__switch--200_010_003:checked ~ .game__switch__label--245_010_003 {
-//   @include tile($top, $center);
-// }
 @include top-right('200_010_003', '254_010_003');
-// #game__switch--200_010_003:checked ~ .game__switch__label--254_010_003 {
-//   @include tile($top, $right);
-// }
 // 2 row
 @include center-left('200_010_003', '200_410_503');
-// #game__switch--200_010_003:checked ~ .game__switch__label--200_410_503 {
-//   @include tile($center, $left);
-// }
 @include center-center('200_010_003');
-// #game__switch--200_010_003:checked ~ .game__tile--5 {
-//   @include tile($center, $center);
-//   @include circle;
-// }
 @include center-right('200_010_003', '200_014_053');
-// #game__switch--200_010_003:checked ~ .game__switch__label--200_014_053 {
-//   @include tile($center, $right);
-// }
 // 3 row
 @include bottom-left('200_010_003', '200_510_403');
-// #game__switch--200_010_003:checked ~ .game__switch__label--200_510_403 {
-//   @include tile($bottom, $left);
-// }
 @include bottom-center('200_010_003', '205_010_043');
-// #game__switch--200_010_003:checked ~ .game__switch__label--205_010_043 {
-//   @include tile($bottom, $center);
-// }
 @include bottom-right('200_010_003');
-// #game__switch--200_010_003:checked ~ .game__tile--9 {
-//   @include tile($bottom, $right);
-//   @include circle;
-// }
+
 // 3rd
 // 245_010_003
 // 1 row
 @include top-left('245_010_003');
 @include top-center('245_010_003');
 @include top-right('245_010_003');
-// #game__switch--245_010_003:checked ~ .game__tile--1 {
-//   @include tile($top, $left);
-//   @include cross;
-// }
-// #game__switch--245_010_003:checked ~ .game__tile--2 {
-//   @include tile($top, $center);
-//   @include cross;
-// }
-// #game__switch--245_010_003:checked ~ .game__tile--3 {
-//   @include tile($top, $right);
-//   @include circle;
-// }
 // 2 row
 @include center-left('245_010_003', '245_617_003');
 @include center-center('245_010_003');
 @include center-right('245_010_003', '245_016_703');
-// #game__switch--245_010_003:checked ~ .game__switch__label--245_617_003 {
-//   @include tile($center, $left);
-// }
-// #game__switch--245_010_003:checked ~ .game__tile--5 {
-//   @include tile($center, $center);
-//   @include circle;
-// }
-// #game__switch--245_010_003:checked ~ .game__switch__label--245_016_703 {
-//   @include tile($center, $right);
-// }
 // 3 row
 @include bottom-left('245_010_003', '245_017_603');
 @include bottom-center('245_010_003', '245_017_063');
 @include bottom-right('245_010_003');
-// #game__switch--245_010_003:checked ~ .game__switch__label--245_017_603 {
-//   @include tile($bottom, $left);
-// }
-// #game__switch--245_010_003:checked ~ .game__switch__label--245_017_063 {
-//   @include tile($bottom, $center);
-// }
-// #game__switch--245_010_003:checked ~ .game__tile--9 {
-//   @include tile($bottom, $right);
-//   @include circle;
-// }
+
 // 254_010_003
 // 1 row
 @include top-left('254_010_003');
@@ -109,41 +49,6 @@
 @include bottom-right('254_010_003');
 // Message
 @include message-line('254_010_003');
-// 1 row
-// #game__switch--254_010_003:checked ~ .game__tile--1 {
-//   @include tile($top, $left);
-//   @include cross;
-// }
-// #game__switch--254_010_003:checked ~ .game__tile--2 {
-//   @include tile($top, $center);
-//   @include circle;
-// }
-// #game__switch--254_010_003:checked ~ .game__tile--3 {
-//   @include tile($top, $right);
-//   @include cross;
-// }
-// 2 row
-// #game__switch--254_010_003:checked ~ .game__switch__label--254_610_073 {
-//   @include tile($center, $left);
-// }
-// #game__switch--254_010_003:checked ~ .game__tile--5 {
-//   @include tile($center, $center);
-//   @include circle;
-// }
-// #game__switch--254_010_003:checked ~ .game__switch__label--254_016_073 {
-//   @include tile($center, $right);
-// }
-// 3 row
-// #game__switch--254_010_003:checked ~ .game__switch__label--254_010_673 {
-//   @include tile($bottom, $left);
-// }
-// #game__switch--254_010_003:checked ~ .game__switch__label--254_710_063 {
-//   @include tile($bottom, $center);
-// }
-// #game__switch--254_010_003:checked ~ .game__tile--9 {
-//   @include tile($bottom, $right);
-//   @include circle;
-// }
 
 // 200_410_503
 // 1 row
@@ -158,43 +63,9 @@
 @include bottom-left('200_410_503');
 @include bottom-center('200_410_503', '207_410_563');
 @include bottom-right('200_410_503');
+
 // Message
 @include message-line('200_410_503');
-// 1 row
-// #game__switch--200_410_503:checked ~ .game__tile--1 {
-//   @include tile($top, $left);
-//   @include cross;
-// }
-// #game__switch--200_410_503:checked ~ .game__switch__label--267_410_503 {
-//   @include tile($top, $center);
-// }
-// #game__switch--200_410_503:checked ~ .game__switch__label--206_410_573 {
-//   @include tile($top, $right);
-// }
-// 2 row
-// #game__switch--200_410_503:checked ~ .game__tile--4 {
-//   @include tile($center, $left);
-//   @include cross;
-// }
-// #game__switch--200_410_503:checked ~ .game__tile--5 {
-//   @include tile($center, $center);
-//   @include circle;
-// }
-// #game__switch--200_410_503:checked ~ .game__switch__label--200_416_573 {
-//   @include tile($center, $right);
-// }
-// 3 row
-// #game__switch--200_410_503:checked ~ .game__tile--7 {
-//   @include tile($bottom, $left);
-//   @include circle;
-// }
-// #game__switch--200_410_503:checked ~ .game__switch__label--207_410_563 {
-//   @include tile($bottom, $center);
-// }
-// #game__switch--200_410_503:checked ~ .game__tile--9 {
-//   @include tile($bottom, $right);
-//   @include circle;
-// }
 // 200_014_053
 // 1 row
 @include top-left('200_014_053');
@@ -211,41 +82,6 @@
 // Message
 @include message-line('200_014_053');
 
-// 1 row
-// #game__switch--200_014_053:checked ~ .game__tile--1 {
-//   @include tile($top, $left);
-//   @include cross;
-// }
-// #game__switch--200_014_053:checked ~ .game__switch__label--260_014_753 {
-//   @include tile($top, $center);
-// }
-// #game__switch--200_014_053:checked ~ .game__switch__label--276_014_053 {
-//   @include tile($top, $right);
-// }
-// 2 row
-// #game__switch--200_014_053:checked ~ .game__switch__label--200_614_753 {
-//   @include tile($center, $left);
-// }
-// #game__switch--200_014_053:checked ~ .game__tile--5 {
-//   @include tile($center, $center);
-//   @include circle;
-// }
-// #game__switch--200_014_053:checked ~ .game__tile--6 {
-//   @include tile($center, $right);
-//   @include cross;
-// }
-// 3 row
-// #game__switch--200_014_053:checked ~ .game__switch__label--270_014_653 {
-//   @include tile($bottom, $left);
-// }
-// #game__switch--200_014_053:checked ~ .game__tile--8 {
-//   @include tile($bottom, $center);
-//   @include circle;
-// }
-// #game__switch--200_014_053:checked ~ .game__tile--9 {
-//   @include tile($bottom, $right);
-//   @include circle;
-// }
 // 200_510_403
 // 1 row
 @include top-left('200_510_403');
@@ -261,41 +97,7 @@
 @include bottom-right('200_510_403');
 // Message
 @include message-line('200_510_403');
-// 1 row
-// #game__switch--200_510_403:checked ~ .game__tile--1 {
-//   @include tile($top, $left);
-//   @include cross;
-// }
-// #game__switch--200_510_403:checked ~ .game__switch__label--260_517_403 {
-//   @include tile($top, $center);
-// }
-// #game__switch--200_510_403:checked ~ .game__switch__label--206_517_403 {
-//   @include tile($top, $right);
-// }
-// 2 row
-// #game__switch--200_510_403:checked ~ .game__tile--4 {
-//   @include tile($center, $left);
-//   @include circle;
-// }
-// #game__switch--200_510_403:checked ~ .game__tile--5 {
-//   @include tile($center, $center);
-//   @include circle;
-// }
-// #game__switch--200_510_403:checked ~ .game__switch__label--270_516_403 {
-//   @include tile($center, $right);
-// }
-// 3 row
-// #game__switch--200_510_403:checked ~ .game__tile--7 {
-//   @include tile($bottom, $left);
-//   @include cross;
-// }
-// #game__switch--200_510_403:checked ~ .game__switch__label--200_517_463 {
-//   @include tile($bottom, $center);
-// }
-// #game__switch--200_510_403:checked ~ .game__tile--9 {
-//   @include tile($bottom, $right);
-//   @include circle;
-// }
+
 // 4th          x x o
 // 245_617_003  x o o
 // Win              o
@@ -313,48 +115,7 @@
 @include bottom-right('245_617_003');
 // Message
 @include message-line('245_617_003');
-// #game__switch--245_617_003:checked ~ .game__tile--1 {
-//   @include tile($top, $left);
-//   @include cross;
-// }
-// #game__switch--245_617_003:checked ~ .game__tile--2 {
-//   @include tile($top, $center);
-//   @include cross;
-// }
-// #game__switch--245_617_003:checked ~ .game__tile--3 {
-//   @include tile($top, $right);
-//   @include circle;
-// }
-// // 2 row
-// #game__switch--245_617_003:checked ~ .game__tile--4 {
-//   @include tile($center, $left);
-//   @include cross;
-// }
-// #game__switch--245_617_003:checked ~ .game__tile--5 {
-//   @include tile($center, $center);
-//   @include circle;
-// }
-// #game__switch--245_617_003:checked ~ .game__tile--6 {
-//   @include tile($center, $right);
-//   @include circle;
-// }
-// // 3 row
-// #game__switch--245_617_003:checked ~ .game__tile--7 {
-//   @include tile($bottom, $left);
-// }
-// #game__switch--245_617_003:checked ~ .game__tile--8 {
-//   @include tile($bottom, $center);
-// }
-// #game__switch--245_617_003:checked ~ .game__tile--9 {
-//   @include tile($bottom, $right);
-//   @include circle;
-// }
-// #game__switch--245_617_003:checked ~ .game__switch__label--000_000_000 {
-//   @include massage($win);
-// }
-// #game__switch--245_617_003:checked ~ .game__line {
-//   @include line($vertical, $last);
-// }
+
 // 245_016_703  x x o
 // Win            o x
 // 1 row        o   o
@@ -371,48 +132,7 @@
 @include bottom-right('245_016_703');
 // Message
 @include message-line('245_016_703');
-// #game__switch--245_016_703:checked ~ .game__tile--1 {
-//   @include tile($top, $left);
-//   @include cross;
-// }
-// #game__switch--245_016_703:checked ~ .game__tile--2 {
-//   @include tile($top, $center);
-//   @include cross;
-// }
-// #game__switch--245_016_703:checked ~ .game__tile--3 {
-//   @include tile($top, $right);
-//   @include circle;
-// }
-// // 2 row
-// #game__switch--245_016_703:checked ~ .game__tile--4 {
-//   @include tile($center, $left);
-// }
-// #game__switch--245_016_703:checked ~ .game__tile--5 {
-//   @include tile($center, $center);
-//   @include circle;
-// }
-// #game__switch--245_016_703:checked ~ .game__tile--6 {
-//   @include tile($center, $right);
-//   @include cross;
-// }
-// // 3 row
-// #game__switch--245_016_703:checked ~ .game__tile--7 {
-//   @include tile($bottom, $left);
-//   @include circle;
-// }
-// #game__switch--245_016_703:checked ~ .game__tile--8 {
-//   @include tile($bottom, $center);
-// }
-// #game__switch--245_016_703:checked ~ .game__tile--9 {
-//   @include tile($bottom, $right);
-//   @include circle;
-// }
-// #game__switch--245_016_703:checked ~ .game__switch__label--000_000_000 {
-//   @include massage($win);
-// }
-// #game__switch--245_016_703:checked ~ .game__line {
-//   @include line($upwards);
-// }
+
 // 245_017_603  x x o
 // Win            o o
 // 1 row        x   o
@@ -429,48 +149,7 @@
 @include bottom-right('245_017_603');
 // Message
 @include message-line('245_017_603');
-// #game__switch--245_017_603:checked ~ .game__tile--1 {
-//   @include tile($top, $left);
-//   @include cross;
-// }
-// #game__switch--245_017_603:checked ~ .game__tile--2 {
-//   @include tile($top, $center);
-//   @include cross;
-// }
-// #game__switch--245_017_603:checked ~ .game__tile--3 {
-//   @include tile($top, $right);
-//   @include circle;
-// }
-// // 2 row
-// #game__switch--245_017_603:checked ~ .game__tile--4 {
-//   @include tile($center, $left);
-// }
-// #game__switch--245_017_603:checked ~ .game__tile--5 {
-//   @include tile($center, $center);
-//   @include circle;
-// }
-// #game__switch--245_017_603:checked ~ .game__tile--6 {
-//   @include tile($center, $right);
-//   @include circle;
-// }
-// // 3 row
-// #game__switch--245_017_603:checked ~ .game__tile--7 {
-//   @include tile($bottom, $left);
-//   @include cross;
-// }
-// #game__switch--245_017_603:checked ~ .game__tile--8 {
-//   @include tile($bottom, $center);
-// }
-// #game__switch--245_017_603:checked ~ .game__tile--9 {
-//   @include tile($bottom, $right);
-//   @include circle;
-// }
-// #game__switch--245_017_603:checked ~ .game__switch__label--000_000_000 {
-//   @include massage($win);
-// }
-// #game__switch--245_017_603:checked ~ .game__line {
-//   @include line($vertical, $last);
-// }
+
 // 245_017_063  x x o
 // Win            o o
 // 1 row          x o
@@ -487,48 +166,7 @@
 @include bottom-right('245_017_063');
 // Message
 @include message-line('245_017_063');
-// #game__switch--245_017_063:checked ~ .game__tile--1 {
-//   @include tile($top, $left);
-//   @include cross;
-// }
-// #game__switch--245_017_063:checked ~ .game__tile--2 {
-//   @include tile($top, $center);
-//   @include cross;
-// }
-// #game__switch--245_017_063:checked ~ .game__tile--3 {
-//   @include tile($top, $right);
-//   @include circle;
-// }
-// // 2 row
-// #game__switch--245_017_063:checked ~ .game__tile--4 {
-//   @include tile($center, $left);
-// }
-// #game__switch--245_017_063:checked ~ .game__tile--5 {
-//   @include tile($center, $center);
-//   @include circle;
-// }
-// #game__switch--245_017_063:checked ~ .game__tile--6 {
-//   @include tile($center, $right);
-//   @include circle;
-// }
-// // 3 row
-// #game__switch--245_017_063:checked ~ .game__tile--7 {
-//   @include tile($bottom, $left);
-// }
-// #game__switch--245_017_063:checked ~ .game__tile--8 {
-//   @include tile($bottom, $center);
-//   @include cross;
-// }
-// #game__switch--245_017_063:checked ~ .game__tile--9 {
-//   @include tile($bottom, $right);
-//   @include circle;
-// }
-// #game__switch--245_017_063:checked ~ .game__switch__label--000_000_000 {
-//   @include massage($win);
-// }
-// #game__switch--245_017_063:checked ~ .game__line {
-//   @include line($vertical, $last);
-// }
+
 // 254_610_073  x o x
 // Win          x o
 // 1 row          o o
@@ -545,48 +183,7 @@
 @include bottom-right('254_610_073');
 // Message
 @include message-line('254_610_073');
-// #game__switch--254_610_073:checked ~ .game__tile--1 {
-//   @include tile($top, $left);
-//   @include cross;
-// }
-// #game__switch--254_610_073:checked ~ .game__tile--2 {
-//   @include tile($top, $center);
-//   @include circle;
-// }
-// #game__switch--254_610_073:checked ~ .game__tile--3 {
-//   @include tile($top, $right);
-//   @include cross;
-// }
-// // 2 row
-// #game__switch--254_610_073:checked ~ .game__tile--4 {
-//   @include tile($center, $left);
-//   @include cross;
-// }
-// #game__switch--254_610_073:checked ~ .game__tile--5 {
-//   @include tile($center, $center);
-//   @include circle;
-// }
-// #game__switch--254_610_073:checked ~ .game__tile--6 {
-//   @include tile($center, $right);
-// }
-// // 3 row
-// #game__switch--254_610_073:checked ~ .game__tile--7 {
-//   @include tile($bottom, $left);
-// }
-// #game__switch--254_610_073:checked ~ .game__tile--8 {
-//   @include tile($bottom, $center);
-//   @include circle;
-// }
-// #game__switch--254_610_073:checked ~ .game__tile--9 {
-//   @include tile($bottom, $right);
-//   @include circle;
-// }
-// #game__switch--254_610_073:checked ~ .game__switch__label--000_000_000 {
-//   @include massage($win);
-// }
-// #game__switch--254_610_073:checked ~ .game__line {
-//   @include line($vertical, $middle);
-// }
+
 // 254_016_073  x o x
 // Win            o x
 // 1 row          o o
@@ -603,48 +200,7 @@
 @include bottom-right('254_016_073');
 // Message
 @include message-line('254_016_073');
-// #game__switch--254_016_073:checked ~ .game__tile--1 {
-//   @include tile($top, $left);
-//   @include cross;
-// }
-// #game__switch--254_016_073:checked ~ .game__tile--2 {
-//   @include tile($top, $center);
-//   @include circle;
-// }
-// #game__switch--254_016_073:checked ~ .game__tile--3 {
-//   @include tile($top, $right);
-//   @include cross;
-// }
-// // 2 row
-// #game__switch--254_016_073:checked ~ .game__tile--4 {
-//   @include tile($center, $left);
-// }
-// #game__switch--254_016_073:checked ~ .game__tile--5 {
-//   @include tile($center, $center);
-//   @include circle;
-// }
-// #game__switch--254_016_073:checked ~ .game__tile--6 {
-//   @include tile($center, $right);
-//   @include cross;
-// }
-// // 3 row
-// #game__switch--254_016_073:checked ~ .game__tile--7 {
-//   @include tile($bottom, $left);
-// }
-// #game__switch--254_016_073:checked ~ .game__tile--8 {
-//   @include tile($bottom, $center);
-//   @include circle;
-// }
-// #game__switch--254_016_073:checked ~ .game__tile--9 {
-//   @include tile($bottom, $right);
-//   @include circle;
-// }
-// #game__switch--254_016_073:checked ~ .game__switch__label--000_000_000 {
-//   @include massage($win);
-// }
-// #game__switch--254_016_073:checked ~ .game__line {
-//   @include line($vertical, $middle);
-// }
+
 // 254_010_673  x o x
 // Win            o
 // 1 row        x o o
@@ -661,49 +217,7 @@
 @include bottom-right('254_010_673');
 // Message
 @include message-line('254_010_673');
-// #game__switch--254_010_673:checked ~ .game__tile--1 {
-//   @include tile($top, $left);
-//   @include cross;
-// }
-// #game__switch--254_010_673:checked ~ .game__tile--2 {
-//   @include tile($top, $center);
-//   @include circle;
-// }
-// #game__switch--254_010_673:checked ~ .game__tile--3 {
-//   @include tile($top, $right);
-//   @include cross;
-// }
-// // 2 row
-// #game__switch--254_010_673:checked ~ .game__tile--4 {
-//   @include tile($center, $left);
-// }
-// #game__switch--254_010_673:checked ~ .game__tile--5 {
-//   @include tile($center, $center);
-//   @include circle;
-// }
-// #game__switch--254_010_673:checked ~ .game__tile--6 {
-//   @include tile($center, $right);
-// }
-// // 3 row
-// #game__switch--254_010_673:checked ~ .game__tile--7 {
-//   @include tile($bottom, $left);
-//   @include cross;
-// }
-// #game__switch--254_010_673:checked ~ .game__tile--8 {
-//   @include tile($bottom, $center);
-//   @include circle;
-// }
-// #game__switch--254_010_673:checked ~ .game__tile--9 {
-//   @include tile($bottom, $right);
-//   @include circle;
-// }
-// @include message-line('254_010_673');
-// #game__switch--254_010_673:checked ~ .game__switch__label--000_000_000 {
-//   @include massage($win);
-// }
-// #game__switch--254_010_673:checked ~ .game__line {
-//   @include line($vertical, $middle);
-// }
+
 // 254_710_063
 // 1 row
 @include top-left('254_710_063');
@@ -719,42 +233,7 @@
 @include bottom-right('254_710_063');
 // Message
 @include message-line('254_710_063');
-// #game__switch--254_710_063:checked ~ .game__tile--1 {
-//   @include tile($top, $left);
-//   @include cross;
-// }
-// #game__switch--254_710_063:checked ~ .game__tile--2 {
-//   @include tile($top, $center);
-//   @include circle;
-// }
-// #game__switch--254_710_063:checked ~ .game__tile--3 {
-//   @include tile($top, $right);
-//   @include cross;
-// }
-// // 2 row
-// #game__switch--254_710_063:checked ~ .game__tile--4 {
-//   @include tile($center, $left);
-//   @include circle;
-// }
-// #game__switch--254_710_063:checked ~ .game__tile--5 {
-//   @include tile($center, $center);
-//   @include circle;
-// }
-// #game__switch--254_710_063:checked ~ .game__switch__label--254_718_963 {
-//   @include tile($center, $right);
-// }
-// 3 row
-// #game__switch--254_710_063:checked ~ .game__switch__label--254_719_863 {
-//   @include tile($bottom, $left);
-// }
-// #game__switch--254_710_063:checked ~ .game__tile--8 {
-//   @include tile($bottom, $center);
-//   @include cross;
-// }
-// #game__switch--254_710_063:checked ~ .game__tile--9 {
-//   @include tile($bottom, $right);
-//   @include circle;
-// }
+
 // 5th
 // Draw
 // 254_718_963
@@ -771,48 +250,7 @@
 @include bottom-right('254_718_963');
 // Message
 @include message-line('254_718_963');
-// #game__switch--254_718_963:checked ~ .game__tile--1 {
-//   @include tile($top, $left);
-//   @include cross;
-// }
-// #game__switch--254_718_963:checked ~ .game__tile--2 {
-//   @include tile($top, $center);
-//   @include circle;
-// }
-// #game__switch--254_718_963:checked ~ .game__tile--3 {
-//   @include tile($top, $right);
-//   @include cross;
-// }
-// // 2 row
-// #game__switch--254_718_963:checked ~ .game__tile--4 {
-//   @include tile($center, $left);
-//   @include circle;
-// }
-// #game__switch--254_718_963:checked ~ .game__tile--5 {
-//   @include tile($center, $center);
-//   @include circle;
-// }
-// #game__switch--254_718_963:checked ~ .game__tile--6 {
-//   @include tile($center, $right);
-//   @include cross;
-// }
-// // 3 row
-// #game__switch--254_718_963:checked ~ .game__tile--7 {
-//   @include tile($bottom, $left);
-//   @include circle;
-// }
-// #game__switch--254_718_963:checked ~ .game__tile--8 {
-//   @include tile($bottom, $center);
-//   @include cross;
-// }
-// #game__switch--254_718_963:checked ~ .game__tile--9 {
-//   @include tile($bottom, $right);
-//   @include circle;
-// }
-// @include message-line('254_718_963');
-// #game__switch--254_718_963:checked ~ .game__switch__label--000_000_000 {
-//   @include massage($draw);
-// }
+
 // 254_719_863  x o x
 // Win          o o o
 // 1 row        x x o
@@ -829,50 +267,7 @@
 @include bottom-right('254_719_863');
 // Message
 @include message-line('254_719_863');
-// #game__switch--254_719_863:checked ~ .game__tile--1 {
-//   @include tile($top, $left);
-//   @include cross;
-// }
-// #game__switch--254_719_863:checked ~ .game__tile--2 {
-//   @include tile($top, $center);
-//   @include circle;
-// }
-// #game__switch--254_719_863:checked ~ .game__tile--3 {
-//   @include tile($top, $right);
-//   @include cross;
-// }
-// // 2 row
-// #game__switch--254_719_863:checked ~ .game__tile--4 {
-//   @include tile($center, $left);
-//   @include circle;
-// }
-// #game__switch--254_719_863:checked ~ .game__tile--5 {
-//   @include tile($center, $center);
-//   @include circle;
-// }
-// #game__switch--254_719_863:checked ~ .game__tile--6 {
-//   @include tile($center, $right);
-//   @include circle;
-// }
-// // 3 row
-// #game__switch--254_719_863:checked ~ .game__tile--7 {
-//   @include tile($bottom, $left);
-//   @include cross;
-// }
-// #game__switch--254_719_863:checked ~ .game__tile--8 {
-//   @include tile($bottom, $center);
-//   @include cross;
-// }
-// #game__switch--254_719_863:checked ~ .game__tile--9 {
-//   @include tile($bottom, $right);
-//   @include circle;
-// }
-// #game__switch--254_719_863:checked ~ .game__switch__label--000_000_000 {
-//   @include massage($win);
-// }
-// #game__switch--254_719_863:checked ~ .game__line {
-//   @include line($horizontal, $middle);
-// }
+
 // 267_410_503  x x o
 // win          x o
 // 1 row        o   o
@@ -890,48 +285,6 @@
 // Message
 @include message-line('267_410_503');
 
-// #game__switch--267_410_503:checked ~ .game__tile--1 {
-//   @include tile($top, $left);
-//   @include cross;
-// }
-// #game__switch--267_410_503:checked ~ .game__tile--2 {
-//   @include tile($top, $center);
-//   @include cross;
-// }
-// #game__switch--267_410_503:checked ~ .game__tile--3 {
-//   @include tile($top, $right);
-//   @include circle;
-// }
-// // 2 row
-// #game__switch--267_410_503:checked ~ .game__tile--4 {
-//   @include tile($center, $left);
-//   @include cross;
-// }
-// #game__switch--267_410_503:checked ~ .game__tile--5 {
-//   @include tile($center, $center);
-//   @include circle;
-// }
-// #game__switch--267_410_503:checked ~ .game__tile--6 {
-//   @include tile($center, $right);
-// }
-// // 3 row
-// #game__switch--267_410_503:checked ~ .game__tile--7 {
-//   @include tile($bottom, $left);
-//   @include circle;
-// }
-// #game__switch--267_410_503:checked ~ .game__tile--8 {
-//   @include tile($bottom, $center);
-// }
-// #game__switch--267_410_503:checked ~ .game__tile--9 {
-//   @include tile($bottom, $right);
-//   @include circle;
-// }
-// #game__switch--267_410_503:checked ~ .game__switch__label--000_000_000 {
-//   @include massage($win);
-// }
-// #game__switch--267_410_503:checked ~ .game__line {
-//   @include line($upwards);
-// }
 // 206_410_573  x   x
 // win          x o
 // 1 row        o o o
@@ -948,48 +301,7 @@
 @include bottom-right('206_410_573');
 // Message
 @include message-line('206_410_573');
-// #game__switch--206_410_573:checked ~ .game__tile--1 {
-//   @include tile($top, $left);
-//   @include cross;
-// }
-// #game__switch--206_410_573:checked ~ .game__tile--2 {
-//   @include tile($top, $center);
-// }
-// #game__switch--206_410_573:checked ~ .game__tile--3 {
-//   @include tile($top, $right);
-//   @include cross;
-// }
-// // 2 row
-// #game__switch--206_410_573:checked ~ .game__tile--4 {
-//   @include tile($center, $left);
-//   @include cross;
-// }
-// #game__switch--206_410_573:checked ~ .game__tile--5 {
-//   @include tile($center, $center);
-//   @include circle;
-// }
-// #game__switch--206_410_573:checked ~ .game__tile--6 {
-//   @include tile($center, $right);
-// }
-// // 3 row
-// #game__switch--206_410_573:checked ~ .game__tile--7 {
-//   @include tile($bottom, $left);
-//   @include circle;
-// }
-// #game__switch--206_410_573:checked ~ .game__tile--8 {
-//   @include tile($bottom, $center);
-//   @include circle;
-// }
-// #game__switch--206_410_573:checked ~ .game__tile--9 {
-//   @include tile($bottom, $right);
-//   @include circle;
-// }
-// #game__switch--206_410_573:checked ~ .game__switch__label--000_000_000 {
-//   @include massage($win);
-// }
-// #game__switch--206_410_573:checked ~ .game__line {
-//   @include line($horizontal, $last);
-// }
+
 // 200_416_573  x
 // win          x o x
 // 1 row        o o o
@@ -1006,48 +318,7 @@
 @include bottom-right('200_416_573');
 // Message
 @include message-line('200_416_573');
-// #game__switch--200_416_573:checked ~ .game__tile--1 {
-//   @include tile($top, $left);
-//   @include cross;
-// }
-// #game__switch--200_416_573:checked ~ .game__tile--2 {
-//   @include tile($top, $center);
-// }
-// #game__switch--200_416_573:checked ~ .game__tile--3 {
-//   @include tile($top, $right);
-// }
-// // 2 row
-// #game__switch--200_416_573:checked ~ .game__tile--4 {
-//   @include tile($center, $left);
-//   @include cross;
-// }
-// #game__switch--200_416_573:checked ~ .game__tile--5 {
-//   @include tile($center, $center);
-//   @include circle;
-// }
-// #game__switch--200_416_573:checked ~ .game__tile--6 {
-//   @include tile($center, $right);
-//   @include cross;
-// }
-// // 3 row
-// #game__switch--200_416_573:checked ~ .game__tile--7 {
-//   @include tile($bottom, $left);
-//   @include circle;
-// }
-// #game__switch--200_416_573:checked ~ .game__tile--8 {
-//   @include tile($bottom, $center);
-//   @include circle;
-// }
-// #game__switch--200_416_573:checked ~ .game__tile--9 {
-//   @include tile($bottom, $right);
-//   @include circle;
-// }
-// #game__switch--200_416_573:checked ~ .game__switch__label--000_000_000 {
-//   @include massage($win);
-// }
-// #game__switch--200_416_573:checked ~ .game__line {
-//   @include line($horizontal, $last);
-// }
+
 // 207_410_563  x   o
 // win          x o
 // 1 row        o x o
@@ -1064,52 +335,10 @@
 @include bottom-right('207_410_563');
 // Message
 @include message-line('207_410_563');
-// #game__switch--207_410_563:checked ~ .game__tile--1 {
-//   @include tile($top, $left);
-//   @include cross;
-// }
-// #game__switch--207_410_563:checked ~ .game__tile--2 {
-//   @include tile($top, $center);
-// }
-// #game__switch--207_410_563:checked ~ .game__tile--3 {
-//   @include tile($top, $right);
-//   @include circle;
-// }
-// // 2 row
-// #game__switch--207_410_563:checked ~ .game__tile--4 {
-//   @include tile($center, $left);
-//   @include cross;
-// }
-// #game__switch--207_410_563:checked ~ .game__tile--5 {
-//   @include tile($center, $center);
-//   @include circle;
-// }
-// #game__switch--207_410_563:checked ~ .game__tile--6 {
-//   @include tile($center, $right);
-// }
-// // 3 row
-// #game__switch--207_410_563:checked ~ .game__tile--7 {
-//   @include tile($bottom, $left);
-//   @include circle;
-// }
-// #game__switch--207_410_563:checked ~ .game__tile--8 {
-//   @include tile($bottom, $center);
-//   @include cross;
-// }
-// #game__switch--207_410_563:checked ~ .game__tile--9 {
-//   @include tile($bottom, $right);
-//   @include circle;
-// }
-// #game__switch--207_410_563:checked ~ .game__switch__label--000_000_000 {
-//   @include massage($win);
-// }
-// #game__switch--207_410_563:checked ~ .game__line {
-//   @include line($upwards);
-// }
+
 // 260_014_753  x x
 // win            o x
 // 1 row        o o o
-
 @include top-left('260_014_753');
 @include top-center('260_014_753');
 @include top-right('260_014_753');
@@ -1123,52 +352,10 @@
 @include bottom-right('260_014_753');
 // Message
 @include message-line('260_014_753');
-// #game__switch--260_014_753:checked ~ .game__tile--1 {
-//   @include tile($top, $left);
-//   @include cross;
-// }
-// #game__switch--260_014_753:checked ~ .game__tile--2 {
-//   @include tile($top, $center);
-//   @include cross;
-// }
-// #game__switch--260_014_753:checked ~ .game__tile--3 {
-//   @include tile($top, $right);
-// }
-// // 2 row
-// #game__switch--260_014_753:checked ~ .game__tile--4 {
-//   @include tile($center, $left);
-// }
-// #game__switch--260_014_753:checked ~ .game__tile--5 {
-//   @include tile($center, $center);
-//   @include circle;
-// }
-// #game__switch--260_014_753:checked ~ .game__tile--6 {
-//   @include tile($center, $right);
-//   @include cross;
-// }
-// // 3 row
-// #game__switch--260_014_753:checked ~ .game__tile--7 {
-//   @include tile($bottom, $left);
-//   @include circle;
-// }
-// #game__switch--260_014_753:checked ~ .game__tile--8 {
-//   @include tile($bottom, $center);
-//   @include circle;
-// }
-// #game__switch--260_014_753:checked ~ .game__tile--9 {
-//   @include tile($bottom, $right);
-//   @include circle;
-// }
-// #game__switch--260_014_753:checked ~ .game__switch__label--000_000_000 {
-//   @include massage($win);
-// }
-// #game__switch--260_014_753:checked ~ .game__line {
-//   @include line($horizontal, $last);
-// }
+
 // 276_014_053  x o x
 // win            o x
 // 1 row          o o
-
 @include top-left('276_014_053');
 @include top-center('276_014_053');
 @include top-right('276_014_053');
@@ -1182,48 +369,7 @@
 @include bottom-right('276_014_053');
 // Message
 @include message-line('276_014_053');
-// #game__switch--276_014_053:checked ~ .game__tile--1 {
-//   @include tile($top, $left);
-//   @include cross;
-// }
-// #game__switch--276_014_053:checked ~ .game__tile--2 {
-//   @include tile($top, $center);
-//   @include circle;
-// }
-// #game__switch--276_014_053:checked ~ .game__tile--3 {
-//   @include tile($top, $right);
-//   @include cross;
-// }
-// // 2 row
-// #game__switch--276_014_053:checked ~ .game__tile--4 {
-//   @include tile($center, $left);
-// }
-// #game__switch--276_014_053:checked ~ .game__tile--5 {
-//   @include tile($center, $center);
-//   @include circle;
-// }
-// #game__switch--276_014_053:checked ~ .game__tile--6 {
-//   @include tile($center, $right);
-//   @include cross;
-// }
-// // 3 row
-// #game__switch--276_014_053:checked ~ .game__tile--7 {
-//   @include tile($bottom, $left);
-// }
-// #game__switch--276_014_053:checked ~ .game__tile--8 {
-//   @include tile($bottom, $center);
-//   @include circle;
-// }
-// #game__switch--276_014_053:checked ~ .game__tile--9 {
-//   @include tile($bottom, $right);
-//   @include circle;
-// }
-// #game__switch--276_014_053:checked ~ .game__switch__label--000_000_000 {
-//   @include massage($win);
-// }
-// #game__switch--276_014_053:checked ~ .game__line {
-//   @include line($vertical, $middle);
-// }
+
 // 200_614_753  x
 // win          x o x
 // 1 row        o o o
@@ -1240,48 +386,7 @@
 @include bottom-right('200_614_753');
 // Message
 @include message-line('200_614_753');
-// #game__switch--200_614_753:checked ~ .game__tile--1 {
-//   @include tile($top, $left);
-//   @include cross;
-// }
-// #game__switch--200_614_753:checked ~ .game__tile--2 {
-//   @include tile($top, $center);
-// }
-// #game__switch--200_614_753:checked ~ .game__tile--3 {
-//   @include tile($top, $right);
-// }
-// // 2 row
-// #game__switch--200_614_753:checked ~ .game__tile--4 {
-//   @include tile($center, $left);
-//   @include cross;
-// }
-// #game__switch--200_614_753:checked ~ .game__tile--5 {
-//   @include tile($center, $center);
-//   @include circle;
-// }
-// #game__switch--200_614_753:checked ~ .game__tile--6 {
-//   @include tile($center, $right);
-//   @include cross;
-// }
-// // 3 row
-// #game__switch--200_614_753:checked ~ .game__tile--7 {
-//   @include tile($bottom, $left);
-//   @include circle;
-// }
-// #game__switch--200_614_753:checked ~ .game__tile--8 {
-//   @include tile($bottom, $center);
-//   @include circle;
-// }
-// #game__switch--200_614_753:checked ~ .game__tile--9 {
-//   @include tile($bottom, $right);
-//   @include circle;
-// }
-// #game__switch--200_614_753:checked ~ .game__switch__label--000_000_000 {
-//   @include massage($win);
-// }
-// #game__switch--200_614_753:checked ~ .game__line {
-//   @include line($horizontal, $last);
-// }
+
 // 270_014_653  x o
 // win            o x
 // 1 row        x o o
@@ -1298,48 +403,7 @@
 @include bottom-right('270_014_653');
 // Message
 @include message-line('270_014_653');
-// #game__switch--270_014_653:checked ~ .game__tile--1 {
-//   @include tile($top, $left);
-//   @include cross;
-// }
-// #game__switch--270_014_653:checked ~ .game__tile--2 {
-//   @include tile($top, $center);
-//   @include circle;
-// }
-// #game__switch--270_014_653:checked ~ .game__tile--3 {
-//   @include tile($top, $right);
-// }
-// // 2 row
-// #game__switch--270_014_653:checked ~ .game__tile--4 {
-//   @include tile($center, $left);
-// }
-// #game__switch--270_014_653:checked ~ .game__tile--5 {
-//   @include tile($center, $center);
-//   @include circle;
-// }
-// #game__switch--270_014_653:checked ~ .game__tile--6 {
-//   @include tile($center, $right);
-//   @include cross;
-// }
-// // 3 row
-// #game__switch--270_014_653:checked ~ .game__tile--7 {
-//   @include tile($bottom, $left);
-//   @include cross;
-// }
-// #game__switch--270_014_653:checked ~ .game__tile--8 {
-//   @include tile($bottom, $center);
-//   @include circle;
-// }
-// #game__switch--270_014_653:checked ~ .game__tile--9 {
-//   @include tile($bottom, $right);
-//   @include circle;
-// }
-// #game__switch--270_014_653:checked ~ .game__switch__label--000_000_000 {
-//   @include massage($win);
-// }
-// #game__switch--270_014_653:checked ~ .game__line {
-//   @include line($vertical, $middle);
-// }
+
 // 260_517_403  x x
 // win          o o o
 // 1 row        x   o
@@ -1356,48 +420,7 @@
 @include bottom-right('260_517_403');
 // Message
 @include message-line('260_517_403');
-// #game__switch--260_517_403:checked ~ .game__tile--1 {
-//   @include tile($top, $left);
-//   @include cross;
-// }
-// #game__switch--260_517_403:checked ~ .game__tile--2 {
-//   @include tile($top, $center);
-//   @include cross;
-// }
-// #game__switch--260_517_403:checked ~ .game__tile--3 {
-//   @include tile($top, $right);
-// }
-// // 2 row
-// #game__switch--260_517_403:checked ~ .game__tile--4 {
-//   @include tile($center, $left);
-//   @include circle;
-// }
-// #game__switch--260_517_403:checked ~ .game__tile--5 {
-//   @include tile($center, $center);
-//   @include circle;
-// }
-// #game__switch--260_517_403:checked ~ .game__tile--6 {
-//   @include tile($center, $right);
-//   @include circle;
-// }
-// // 3 row
-// #game__switch--260_517_403:checked ~ .game__tile--7 {
-//   @include tile($bottom, $left);
-//   @include cross;
-// }
-// #game__switch--260_517_403:checked ~ .game__tile--8 {
-//   @include tile($bottom, $center);
-// }
-// #game__switch--260_517_403:checked ~ .game__tile--9 {
-//   @include tile($bottom, $right);
-//   @include circle;
-// }
-// #game__switch--260_517_403:checked ~ .game__switch__label--000_000_000 {
-//   @include massage($win);
-// }
-// #game__switch--260_517_403:checked ~ .game__line {
-//   @include line($horizontal, $middle);
-// }
+
 // 206_517_403  x   x
 // win          o o o
 // 1 row        x   o
@@ -1414,48 +437,7 @@
 @include bottom-right('206_517_403');
 // Message
 @include message-line('206_517_403');
-// #game__switch--206_517_403:checked ~ .game__tile--1 {
-//   @include tile($top, $left);
-//   @include cross;
-// }
-// #game__switch--206_517_403:checked ~ .game__tile--2 {
-//   @include tile($top, $center);
-// }
-// #game__switch--206_517_403:checked ~ .game__tile--3 {
-//   @include tile($top, $right);
-//   @include cross;
-// }
-// // 2 row
-// #game__switch--206_517_403:checked ~ .game__tile--4 {
-//   @include tile($center, $left);
-//   @include circle;
-// }
-// #game__switch--206_517_403:checked ~ .game__tile--5 {
-//   @include tile($center, $center);
-//   @include circle;
-// }
-// #game__switch--206_517_403:checked ~ .game__tile--6 {
-//   @include tile($center, $right);
-//   @include circle;
-// }
-// // 3 row
-// #game__switch--206_517_403:checked ~ .game__tile--7 {
-//   @include tile($bottom, $left);
-//   @include cross;
-// }
-// #game__switch--206_517_403:checked ~ .game__tile--8 {
-//   @include tile($bottom, $center);
-// }
-// #game__switch--206_517_403:checked ~ .game__tile--9 {
-//   @include tile($bottom, $right);
-//   @include circle;
-// }
-// #game__switch--206_517_403:checked ~ .game__switch__label--000_000_000 {
-//   @include massage($win);
-// }
-// #game__switch--206_517_403:checked ~ .game__line {
-//   @include line($horizontal, $middle);
-// }
+
 // 270_516_403
 // 1 row
 @include top-left('270_516_403');
@@ -1471,42 +453,7 @@
 @include bottom-right('270_516_403');
 // Message
 @include message-line('270_516_403');
-// #game__switch--270_516_403:checked ~ .game__tile--1 {
-//   @include tile($top, $left);
-//   @include cross;
-// }
-// #game__switch--270_516_403:checked ~ .game__tile--2 {
-//   @include tile($top, $center);
-//   @include circle;
-// }
-// #game__switch--270_516_403:checked ~ .game__switch__label--278_516_493 {
-//   @include tile($top, $right);
-// }
-// // 2 row
-// #game__switch--270_516_403:checked ~ .game__tile--4 {
-//   @include tile($center, $left);
-//   @include circle;
-// }
-// #game__switch--270_516_403:checked ~ .game__tile--5 {
-//   @include tile($center, $center);
-//   @include circle;
-// }
-// #game__switch--270_516_403:checked ~ .game__tile--6 {
-//   @include tile($center, $right);
-//   @include cross;
-// }
-// // 3 row
-// #game__switch--270_516_403:checked ~ .game__tile--7 {
-//   @include tile($bottom, $left);
-//   @include cross;
-// }
-// #game__switch--270_516_403:checked ~ .game__switch__label--279_516_483 {
-//   @include tile($bottom, $center);
-// }
-// #game__switch--270_516_403:checked ~ .game__tile--9 {
-//   @include tile($bottom, $right);
-//   @include circle;
-// }
+
 // 278_516_493  x o x
 // win          o o x
 // 1 row        x o o
@@ -1523,50 +470,7 @@
 @include bottom-right('278_516_493');
 // Message
 @include message-line('278_516_493');
-// #game__switch--278_516_493:checked ~ .game__tile--1 {
-//   @include tile($top, $left);
-//   @include cross;
-// }
-// #game__switch--278_516_493:checked ~ .game__tile--2 {
-//   @include tile($top, $center);
-//   @include circle;
-// }
-// #game__switch--278_516_493:checked ~ .game__tile--3 {
-//   @include tile($top, $right);
-//   @include cross;
-// }
-// // 2 row
-// #game__switch--278_516_493:checked ~ .game__tile--4 {
-//   @include tile($center, $left);
-//   @include circle;
-// }
-// #game__switch--278_516_493:checked ~ .game__tile--5 {
-//   @include tile($center, $center);
-//   @include circle;
-// }
-// #game__switch--278_516_493:checked ~ .game__tile--6 {
-//   @include tile($center, $right);
-//   @include cross;
-// }
-// // 3 row
-// #game__switch--278_516_493:checked ~ .game__tile--7 {
-//   @include tile($bottom, $left);
-//   @include cross;
-// }
-// #game__switch--278_516_493:checked ~ .game__tile--8 {
-//   @include tile($bottom, $center);
-//   @include circle;
-// }
-// #game__switch--278_516_493:checked ~ .game__tile--9 {
-//   @include tile($bottom, $right);
-//   @include circle;
-// }
-// #game__switch--278_516_493:checked ~ .game__switch__label--000_000_000 {
-//   @include massage($win);
-// }
-// #game__switch--278_516_493:checked ~ .game__line {
-//   @include line($vertical, $middle);
-// }
+
 // 279_516_483  x o o
 // draw         o o x
 // 1 row        x x o
@@ -1583,47 +487,7 @@
 @include bottom-right('279_516_483');
 // Message
 @include message-line('279_516_483');
-// #game__switch--279_516_483:checked ~ .game__tile--1 {
-//   @include tile($top, $left);
-//   @include cross;
-// }
-// #game__switch--279_516_483:checked ~ .game__tile--2 {
-//   @include tile($top, $center);
-//   @include circle;
-// }
-// #game__switch--279_516_483:checked ~ .game__tile--3 {
-//   @include tile($top, $right);
-//   @include circle;
-// }
-// // 2 row
-// #game__switch--279_516_483:checked ~ .game__tile--4 {
-//   @include tile($center, $left);
-//   @include circle;
-// }
-// #game__switch--279_516_483:checked ~ .game__tile--5 {
-//   @include tile($center, $center);
-//   @include circle;
-// }
-// #game__switch--279_516_483:checked ~ .game__tile--6 {
-//   @include tile($center, $right);
-//   @include cross;
-// }
-// // 3 row
-// #game__switch--279_516_483:checked ~ .game__tile--7 {
-//   @include tile($bottom, $left);
-//   @include cross;
-// }
-// #game__switch--279_516_483:checked ~ .game__tile--8 {
-//   @include tile($bottom, $center);
-//   @include cross;
-// }
-// #game__switch--279_516_483:checked ~ .game__tile--9 {
-//   @include tile($bottom, $right);
-//   @include circle;
-// }
-// #game__switch--279_516_483:checked ~ .game__switch__label--000_000_000 {
-//   @include massage($draw);
-// }
+
 // 200_517_463  x
 // win          o o o
 // 1 row        x x o
@@ -1640,61 +504,85 @@
 @include bottom-right('200_517_463');
 // Message
 @include message-line('200_517_463');
-// #game__switch--200_517_463:checked ~ .game__tile--1 {
-//   @include tile($top, $left);
-//   @include cross;
-// }
-// #game__switch--200_517_463:checked ~ .game__tile--2 {
-//   @include tile($top, $center);
-// }
-// #game__switch--200_517_463:checked ~ .game__tile--3 {
-//   @include tile($top, $right);
-// }
-// // 2 row
-// #game__switch--200_517_463:checked ~ .game__tile--4 {
-//   @include tile($center, $left);
-//   @include circle;
-// }
-// #game__switch--200_517_463:checked ~ .game__tile--5 {
-//   @include tile($center, $center);
-//   @include circle;
-// }
-// #game__switch--200_517_463:checked ~ .game__tile--6 {
-//   @include tile($center, $right);
-//   @include circle;
-// }
-// // 3 row
-// #game__switch--200_517_463:checked ~ .game__tile--7 {
-//   @include tile($bottom, $left);
-//   @include cross;
-// }
-// #game__switch--200_517_463:checked ~ .game__tile--8 {
-//   @include tile($bottom, $center);
-//   @include cross;
-// }
-// #game__switch--200_517_463:checked ~ .game__tile--9 {
-//   @include tile($bottom, $right);
-//   @include circle;
-// }
-// #game__switch--200_517_463:checked ~ .game__switch__label--000_000_000 {
-//   @include massage($win);
-// }
-// #game__switch--200_517_463:checked ~ .game__line {
-//   @include line($horizontal, $middle);
-// }
+
 // 205_010_043
 // 1 row
 @include top-left('205_010_043');
-@include top-center('205_010_043');
+@include top-center('205_010_043', '265_017_043');
 @include top-right('205_010_043');
 // 2 row
-@include center-left('205_010_043');
+@include center-left('205_010_043', '205_610_743');
 @include center-center('205_010_043');
-@include center-right('205_010_043');
+@include center-right('205_010_043', '205_016_743');
 // 3 row
-@include bottom-left('205_010_043');
+@include bottom-left('205_010_043', '205_017_643');
 @include bottom-center('205_010_043');
 @include bottom-right('205_010_043');
 // Message
 @include message-line('205_010_043');
+
+// 265_017_043
+// 1 row
+@include top-left('265_017_043');
+@include top-center('265_017_043');
+@include top-right('265_017_043');
+// 2 row
+@include center-left('265_017_043');
+@include center-center('265_017_043');
+@include center-right('265_017_043');
+// 3 row
+@include bottom-left('265_017_043');
+@include bottom-center('265_017_043');
+@include bottom-right('265_017_043');
+// Message
+@include message-line('265_017_043');
+
+// 205_610_743
+// 1 row
+@include top-left('205_610_743');
+@include top-center('205_610_743');
+@include top-right('205_610_743');
+// 2 row
+@include center-left('205_610_743');
+@include center-center('205_610_743');
+@include center-right('205_610_743');
+// 3 row
+@include bottom-left('205_610_743');
+@include bottom-center('205_610_743');
+@include bottom-right('205_610_743');
+// Message
+@include message-line('205_610_743');
+
+// 205_016_743
+// 1 row
+@include top-left('205_016_743');
+@include top-center('205_016_743');
+@include top-right('205_016_743');
+// 2 row
+@include center-left('205_016_743');
+@include center-center('205_016_743');
+@include center-right('205_016_743');
+// 3 row
+@include bottom-left('205_016_743');
+@include bottom-center('205_016_743');
+@include bottom-right('205_016_743');
+// Message
+@include message-line('205_016_743');
+
+// 205_017_643
+// 1 row
+@include top-left('205_017_643');
+@include top-center('205_017_643');
+@include top-right('205_017_643');
+// 2 row
+@include center-left('205_017_643');
+@include center-center('205_017_643');
+@include center-right('205_017_643');
+// 3 row
+@include bottom-left('205_017_643');
+@include bottom-center('205_017_643');
+@include bottom-right('205_017_643');
+// Message
+@include message-line('205_017_643');
+
 // End of section

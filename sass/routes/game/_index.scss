@@ -1,16 +1,16 @@
 @import 'game-mixins';
 #game:target {
   display: grid;
-  grid-template-rows: 20vh repeat(3, 20vh) 1fr;
-  grid-auto-rows: 1.5rem;
+  grid-template-rows: 10vh repeat(3, 20vh) 1fr;
+  grid-auto-rows: 0.5rem;
   grid-template-columns: 1fr repeat(3, 20vh) 1fr;
   --animation-interval: 0.1s;
   --animation-delay-1: 0s;
-  --animation-delay-2: 0.2s;
-  --animation-delay-3: 0.4s;
+  --animation-delay-2: calc(var(--animation-interval) * 2);
+  --animation-delay-3: calc(var(--animation-interval) * 4);
+  --animation-delay-4: calc(var(--animation-interval) * 6);
   .game__switch__radio {
-    /** Uncomment for prod */
-    // display: none;
+    display: none;
   }
   label {
     display: none;
@@ -19,6 +19,19 @@
   i {
     transition: none;
     font-style: normal;
+  }
+  .game__switch__label--000_010_000 {
+    grid-row: 1/2;
+    grid-column: 3/4;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    background-color: transparent;
+    &::before {
+      content: 'Re-Start';
+      font-size: 5rem;
+      color: var(--main-color);
+    }
   }
   // Start
   #game__switch--000_000_000:checked ~ .game__tile--1 {
@@ -49,7 +62,13 @@
     @include tile($bottom, $right);
   }
   #game__switch--000_000_000:checked ~ .game__switch__label--000_010_000 {
-    @include massage($start);
+    @include massage($start) {
+      &::before {
+        animation: none;
+        animation: draw-win-line var(--animation-interval) ease-in-out var(--animation-delay-2) 1
+          normal both;
+      }
+    }
   }
   // 1st
   // 1 row

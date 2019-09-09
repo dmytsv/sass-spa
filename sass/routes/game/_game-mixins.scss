@@ -29,7 +29,11 @@ $start: 'Start';
     color: var(--main-color);
     text-shadow: 0 0 2rem var(--text-light-theme), 0 0 0.5rem var(--text-light-theme);
     font-size: 10vh;
+    animation: none;
+    animation: draw-win-line var(--animation-interval) ease-in-out var(--animation-delay-4) 1 normal
+      both;
   }
+  @content;
 }
 // Line vars
 $horizontal: 'horizontal';

@@ -1,15 +1,182 @@
+/**
+* . . .
+* . o .
+* o x .
+*/
 // 000_010_320
 // 1 row
-@include top-left('000_010_320');
-@include top-center('000_010_320');
-@include top-right('000_010_320');
+@include top-left('000_010_320', '405_010_320');
+@include top-center('000_010_320', '045_010_320');
+@include top-right('000_010_320', '504_010_320');
 // 2 row
-@include center-left('000_010_320');
+@include center-left('000_010_320', '005_410_320');
 @include center-center('000_010_320');
-@include center-right('000_010_320');
+@include center-right('000_010_320', '005_014_320');
 // 3 row
 @include bottom-left('000_010_320');
 @include bottom-center('000_010_320');
-@include bottom-right('000_010_320');
+@include bottom-right('000_010_320', '005_010_324');
 // Message
 @include message-line('000_010_320');
+
+// 2nd =======
+// 504_010_320
+// 1 row
+@include top-left('504_010_320');
+@include top-center('504_010_320', '564_710_320');
+@include top-right('504_010_320');
+// 2 row
+@include center-left('504_010_320', '504_610_327');
+@include center-center('504_010_320');
+@include center-right('504_010_320', '504_016_327');
+// 3 row
+@include bottom-left('504_010_320');
+@include bottom-center('504_010_320');
+@include bottom-right('504_010_320', '504_710_326');
+// Message
+@include message-line('504_010_320');
+
+// 3rd =======
+// 405_010_320
+// 1 row
+@include top-left('405_010_320');
+@include top-center('405_010_320');
+@include top-right('405_010_320');
+// 2 row
+@include center-left('405_010_320');
+@include center-center('405_010_320');
+@include center-right('405_010_320');
+// 3 row
+@include bottom-left('405_010_320');
+@include bottom-center('405_010_320');
+@include bottom-right('405_010_320');
+// Message
+@include message-line('405_010_320');
+
+// 045_010_320
+// 1 row
+@include top-left('045_010_320');
+@include top-center('045_010_320');
+@include top-right('045_010_320');
+// 2 row
+@include center-left('045_010_320');
+@include center-center('045_010_320');
+@include center-right('045_010_320');
+// 3 row
+@include bottom-left('045_010_320');
+@include bottom-center('045_010_320');
+@include bottom-right('045_010_320');
+// Message
+@include message-line('045_010_320');
+
+// 564_710_320
+// 1 row
+@include top-left('564_710_320');
+@include top-center('564_710_320');
+@include top-right('564_710_320');
+// 2 row
+@include center-left('564_710_320');
+@include center-center('564_710_320');
+@include center-right('564_710_320');
+// 3 row
+@include bottom-left('564_710_320');
+@include bottom-center('564_710_320');
+@include bottom-right('564_710_320');
+// Message
+@include message-line('564_710_320');
+
+// 504_610_327
+// 1 row
+@include top-left('504_610_327');
+@include top-center('504_610_327');
+@include top-right('504_610_327');
+// 2 row
+@include center-left('504_610_327');
+@include center-center('504_610_327');
+@include center-right('504_610_327');
+// 3 row
+@include bottom-left('504_610_327');
+@include bottom-center('504_610_327');
+@include bottom-right('504_610_327');
+// Message
+@include message-line('504_610_327');
+
+// 504_016_327
+// 1 row
+@include top-left('504_016_327');
+@include top-center('504_016_327');
+@include top-right('504_016_327');
+// 2 row
+@include center-left('504_016_327');
+@include center-center('504_016_327');
+@include center-right('504_016_327');
+// 3 row
+@include bottom-left('504_016_327');
+@include bottom-center('504_016_327');
+@include bottom-right('504_016_327');
+// Message
+@include message-line('504_016_327');
+
+// 504_710_326
+// 1 row
+@include top-left('504_710_326');
+@include top-center('504_710_326');
+@include top-right('504_710_326');
+// 2 row
+@include center-left('504_710_326');
+@include center-center('504_710_326');
+@include center-right('504_710_326');
+// 3 row
+@include bottom-left('504_710_326');
+@include bottom-center('504_710_326');
+@include bottom-right('504_710_326');
+// Message
+@include message-line('504_710_326');
+
+// 005_410_320
+// 1 row
+@include top-left('005_410_320');
+@include top-center('005_410_320');
+@include top-right('005_410_320');
+// 2 row
+@include center-left('005_410_320');
+@include center-center('005_410_320');
+@include center-right('005_410_320');
+// 3 row
+@include bottom-left('005_410_320');
+@include bottom-center('005_410_320');
+@include bottom-right('005_410_320');
+// Message
+@include message-line('005_410_320');
+
+// 005_014_320
+// 1 row
+@include top-left('005_014_320');
+@include top-center('005_014_320');
+@include top-right('005_014_320');
+// 2 row
+@include center-left('005_014_320');
+@include center-center('005_014_320');
+@include center-right('005_014_320');
+// 3 row
+@include bottom-left('005_014_320');
+@include bottom-center('005_014_320');
+@include bottom-right('005_014_320');
+// Message
+@include message-line('005_014_320');
+
+// 005_010_324
+// 1 row
+@include top-left('005_010_324');
+@include top-center('005_010_324');
+@include top-right('005_010_324');
+// 2 row
+@include center-left('005_010_324');
+@include center-center('005_010_324');
+@include center-right('005_010_324');
+// 3 row
+@include bottom-left('005_010_324');
+@include bottom-center('005_010_324');
+@include bottom-right('005_010_324');
+// Message
+@include message-line('005_010_324');

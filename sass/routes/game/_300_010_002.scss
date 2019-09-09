@@ -1,15 +1,566 @@
+/**
+* o . .
+* . o .
+* . . x
+*/
 // 300_010_002
 // 1 row
 @include top-left('300_010_002');
-@include top-center('300_010_002');
-@include top-right('300_010_002');
+@include top-center('300_010_002', '340_510_002');
+@include top-right('300_010_002', '304_015_002');
 // 2 row
-@include center-left('300_010_002');
+@include center-left('300_010_002', '305_410_002');
 @include center-center('300_010_002');
-@include center-right('300_010_002');
+@include center-right('300_010_002', '305_014_002');
 // 3 row
-@include bottom-left('300_010_002');
-@include bottom-center('300_010_002');
+@include bottom-left('300_010_002', '300_010_452');
+@include bottom-center('300_010_002', '300_010_542');
 @include bottom-right('300_010_002');
 // Message
 @include message-line('300_010_002');
+
+// 2nd =======
+// 340_510_002
+// 1 row
+@include top-left('340_510_002');
+@include top-center('340_510_002');
+@include top-right('340_510_002', '346_517_002');
+// 2 row
+@include center-left('340_510_002');
+@include center-center('340_510_002');
+@include center-right('340_510_002', '340_516_702');
+// 3 row
+@include bottom-left('340_510_002', '340_517_602');
+@include bottom-center('340_510_002', '340_510_762');
+@include bottom-right('340_510_002');
+// Message
+@include message-line('340_510_002');
+
+// 304_015_002
+// 1 row
+@include top-left('304_015_002');
+@include top-center('304_015_002', '364_715_002');
+@include top-right('304_015_002');
+// 2 row
+@include center-left('304_015_002', '304_615_072');
+@include center-center('304_015_002');
+@include center-right('304_015_002');
+// 3 row
+@include bottom-left('304_015_002', '304_715_602');
+@include bottom-center('304_015_002', '304_715_062');
+@include bottom-right('304_015_002');
+// Message
+@include message-line('304_015_002');
+
+// 305_410_002
+// 1 row
+@include top-left('305_410_002');
+@include top-center('305_410_002', '365_410_702');
+@include top-right('305_410_002');
+// 2 row
+@include center-left('305_410_002');
+@include center-center('305_410_002');
+@include center-right('305_410_002', '375_416_002');
+// 3 row
+@include bottom-left('305_410_002', '375_410_602');
+@include bottom-center('305_410_002', '375_410_062');
+@include bottom-right('305_410_002');
+// Message
+@include message-line('305_410_002');
+
+// 305_014_002
+// 1 row
+@include top-left('305_014_002');
+@include top-center('305_014_002', '365_014_702');
+@include top-right('305_014_002');
+// 2 row
+@include center-left('305_014_002', '305_614_702');
+@include center-center('305_014_002');
+@include center-right('305_014_002');
+// 3 row
+@include bottom-left('305_014_002', '375_014_602');
+@include bottom-center('305_014_002', '305_014_762');
+@include bottom-right('305_014_002');
+// Message
+@include message-line('305_014_002');
+
+// 300_010_452
+// 1 row
+@include top-left('300_010_452');
+@include top-center('300_010_452', '360_710_452');
+@include top-right('300_010_452', '376_010_452');
+// 2 row
+@include center-left('300_010_452', '370_610_452');
+@include center-center('300_010_452');
+@include center-right('300_010_452', '370_016_452');
+// 3 row
+@include bottom-left('300_010_452');
+@include bottom-center('300_010_452');
+@include bottom-right('300_010_452');
+// Message
+@include message-line('300_010_452');
+
+// 300_010_542
+// 1 row
+@include top-left('300_010_542');
+@include top-center('300_010_542', '360_710_542');
+@include top-right('300_010_542', '306_710_542');
+// 2 row
+@include center-left('300_010_542', '307_610_542');
+@include center-center('300_010_542');
+@include center-right('300_010_542', '300_716_542');
+// 3 row
+@include bottom-left('300_010_542');
+@include bottom-center('300_010_542');
+@include bottom-right('300_010_542');
+// Message
+@include message-line('300_010_542');
+
+// 3rd =======
+// 346_517_002
+// 1 row
+@include top-left('346_517_002');
+@include top-center('346_517_002');
+@include top-right('346_517_002');
+// 2 row
+@include center-left('346_517_002');
+@include center-center('346_517_002');
+@include center-right('346_517_002');
+// 3 row
+@include bottom-left('346_517_002');
+@include bottom-center('346_517_002');
+@include bottom-right('346_517_002');
+// Message
+@include message-line('346_517_002');
+
+// 340_516_702
+// 1 row
+@include top-left('340_516_702');
+@include top-center('340_516_702');
+@include top-right('340_516_702');
+// 2 row
+@include center-left('340_516_702');
+@include center-center('340_516_702');
+@include center-right('340_516_702');
+// 3 row
+@include bottom-left('340_516_702');
+@include bottom-center('340_516_702');
+@include bottom-right('340_516_702');
+// Message
+@include message-line('340_516_702');
+
+// 340_517_602
+// 1 row
+@include top-left('340_517_602');
+@include top-center('340_517_602');
+@include top-right('340_517_602');
+// 2 row
+@include center-left('340_517_602');
+@include center-center('340_517_602');
+@include center-right('340_517_602');
+// 3 row
+@include bottom-left('340_517_602');
+@include bottom-center('340_517_602');
+@include bottom-right('340_517_602');
+// Message
+@include message-line('340_517_602');
+
+// 340_510_762
+// 1 row
+@include top-left('340_510_762');
+@include top-center('340_510_762');
+@include top-right('340_510_762');
+// 2 row
+@include center-left('340_510_762');
+@include center-center('340_510_762');
+@include center-right('340_510_762');
+// 3 row
+@include bottom-left('340_510_762');
+@include bottom-center('340_510_762');
+@include bottom-right('340_510_762');
+// Message
+@include message-line('340_510_762');
+
+// 364_715_002
+// 1 row
+@include top-left('364_715_002');
+@include top-center('364_715_002');
+@include top-right('364_715_002');
+// 2 row
+@include center-left('364_715_002');
+@include center-center('364_715_002');
+@include center-right('364_715_002');
+// 3 row
+@include bottom-left('364_715_002');
+@include bottom-center('364_715_002');
+@include bottom-right('364_715_002');
+// Message
+@include message-line('364_715_002');
+
+// 304_615_072
+// 1 row
+@include top-left('304_615_072');
+@include top-center('304_615_072', '384_615_972');
+@include top-right('304_615_072');
+// 2 row
+@include center-left('304_615_072');
+@include center-center('304_615_072');
+@include center-right('304_615_072');
+// 3 row
+@include bottom-left('304_615_072', '394_615_872');
+@include bottom-center('304_615_072');
+@include bottom-right('304_615_072');
+// Message
+@include message-line('304_615_072');
+
+// 384_615_972
+// 1 row
+@include top-left('384_615_972');
+@include top-center('384_615_972');
+@include top-right('384_615_972');
+// 2 row
+@include center-left('384_615_972');
+@include center-center('384_615_972');
+@include center-right('384_615_972');
+// 3 row
+@include bottom-left('384_615_972');
+@include bottom-center('384_615_972');
+@include bottom-right('384_615_972');
+// Message
+@include message-line('384_615_972');
+
+// 394_615_872
+// 1 row
+@include top-left('394_615_872');
+@include top-center('394_615_872');
+@include top-right('394_615_872');
+// 2 row
+@include center-left('394_615_872');
+@include center-center('394_615_872');
+@include center-right('394_615_872');
+// 3 row
+@include bottom-left('394_615_872');
+@include bottom-center('394_615_872');
+@include bottom-right('394_615_872');
+// Message
+@include message-line('394_615_872');
+
+// 304_715_602
+// 1 row
+@include top-left('304_715_602');
+@include top-center('304_715_602');
+@include top-right('304_715_602');
+// 2 row
+@include center-left('304_715_602');
+@include center-center('304_715_602');
+@include center-right('304_715_602');
+// 3 row
+@include bottom-left('304_715_602');
+@include bottom-center('304_715_602');
+@include bottom-right('304_715_602');
+// Message
+@include message-line('304_715_602');
+
+// 304_715_062
+// 1 row
+@include top-left('304_715_062');
+@include top-center('304_715_062');
+@include top-right('304_715_062');
+// 2 row
+@include center-left('304_715_062');
+@include center-center('304_715_062');
+@include center-right('304_715_062');
+// 3 row
+@include bottom-left('304_715_062');
+@include bottom-center('304_715_062');
+@include bottom-right('304_715_062');
+// Message
+@include message-line('304_715_062');
+
+// 365_410_702
+// 1 row
+@include top-left('365_410_702');
+@include top-center('365_410_702');
+@include top-right('365_410_702');
+// 2 row
+@include center-left('365_410_702');
+@include center-center('365_410_702');
+@include center-right('365_410_702');
+// 3 row
+@include bottom-left('365_410_702');
+@include bottom-center('365_410_702');
+@include bottom-right('365_410_702');
+// Message
+@include message-line('365_410_702');
+
+// 375_416_002
+// 1 row
+@include top-left('375_416_002');
+@include top-center('375_416_002');
+@include top-right('375_416_002');
+// 2 row
+@include center-left('375_416_002');
+@include center-center('375_416_002');
+@include center-right('375_416_002');
+// 3 row
+@include bottom-left('375_416_002');
+@include bottom-center('375_416_002');
+@include bottom-right('375_416_002');
+// Message
+@include message-line('375_416_002');
+
+// 375_410_602
+// 1 row
+@include top-left('375_410_602');
+@include top-center('375_410_602');
+@include top-right('375_410_602');
+// 2 row
+@include center-left('375_410_602');
+@include center-center('375_410_602');
+@include center-right('375_410_602');
+// 3 row
+@include bottom-left('375_410_602');
+@include bottom-center('375_410_602');
+@include bottom-right('375_410_602');
+// Message
+@include message-line('375_410_602');
+
+// 375_410_062
+// 1 row
+@include top-left('375_410_062');
+@include top-center('375_410_062');
+@include top-right('375_410_062');
+// 2 row
+@include center-left('375_410_062');
+@include center-center('375_410_062');
+@include center-right('375_410_062');
+// 3 row
+@include bottom-left('375_410_062');
+@include bottom-center('375_410_062');
+@include bottom-right('375_410_062');
+// Message
+@include message-line('375_410_062');
+
+// 365_014_702
+// 1 row
+@include top-left('365_014_702');
+@include top-center('365_014_702');
+@include top-right('365_014_702');
+// 2 row
+@include center-left('365_014_702');
+@include center-center('365_014_702');
+@include center-right('365_014_702');
+// 3 row
+@include bottom-left('365_014_702');
+@include bottom-center('365_014_702');
+@include bottom-right('365_014_702');
+// Message
+@include message-line('365_014_702');
+
+// 305_614_702
+// 1 row
+@include top-left('305_614_702');
+@include top-center('305_614_702');
+@include top-right('305_614_702');
+// 2 row
+@include center-left('305_614_702');
+@include center-center('305_614_702');
+@include center-right('305_614_702');
+// 3 row
+@include bottom-left('305_614_702');
+@include bottom-center('305_614_702');
+@include bottom-right('305_614_702');
+// Message
+@include message-line('305_614_702');
+
+// 375_014_602
+// 1 row
+@include top-left('375_014_602');
+@include top-center('375_014_602');
+@include top-right('375_014_602');
+// 2 row
+@include center-left('375_014_602');
+@include center-center('375_014_602');
+@include center-right('375_014_602');
+// 3 row
+@include bottom-left('375_014_602');
+@include bottom-center('375_014_602');
+@include bottom-right('375_014_602');
+// Message
+@include message-line('375_014_602');
+
+// 305_014_762
+// 1 row
+@include top-left('305_014_762');
+@include top-center('305_014_762');
+@include top-right('305_014_762');
+// 2 row
+@include center-left('305_014_762');
+@include center-center('305_014_762');
+@include center-right('305_014_762');
+// 3 row
+@include bottom-left('305_014_762');
+@include bottom-center('305_014_762');
+@include bottom-right('305_014_762');
+// Message
+@include message-line('305_014_762');
+
+// 360_710_452
+// 1 row
+@include top-left('360_710_452');
+@include top-center('360_710_452');
+@include top-right('360_710_452', '368_719_452');
+// 2 row
+@include center-left('360_710_452');
+@include center-center('360_710_452');
+@include center-right('360_710_452', '369_718_452');
+// 3 row
+@include bottom-left('360_710_452');
+@include bottom-center('360_710_452');
+@include bottom-right('360_710_452');
+// Message
+@include message-line('360_710_452');
+
+// 368_719_452
+// 1 row
+@include top-left('368_719_452');
+@include top-center('368_719_452');
+@include top-right('368_719_452');
+// 2 row
+@include center-left('368_719_452');
+@include center-center('368_719_452');
+@include center-right('368_719_452');
+// 3 row
+@include bottom-left('368_719_452');
+@include bottom-center('368_719_452');
+@include bottom-right('368_719_452');
+// Message
+@include message-line('368_719_452');
+
+// 369_718_452
+// 1 row
+@include top-left('369_718_452');
+@include top-center('369_718_452');
+@include top-right('369_718_452');
+// 2 row
+@include center-left('369_718_452');
+@include center-center('369_718_452');
+@include center-right('369_718_452');
+// 3 row
+@include bottom-left('369_718_452');
+@include bottom-center('369_718_452');
+@include bottom-right('369_718_452');
+// Message
+@include message-line('369_718_452');
+
+// 376_010_452
+// 1 row
+@include top-left('376_010_452');
+@include top-center('376_010_452');
+@include top-right('376_010_452');
+// 2 row
+@include center-left('376_010_452');
+@include center-center('376_010_452');
+@include center-right('376_010_452');
+// 3 row
+@include bottom-left('376_010_452');
+@include bottom-center('376_010_452');
+@include bottom-right('376_010_452');
+// Message
+@include message-line('376_010_452');
+
+// 370_610_452
+// 1 row
+@include top-left('370_610_452');
+@include top-center('370_610_452');
+@include top-right('370_610_452');
+// 2 row
+@include center-left('370_610_452');
+@include center-center('370_610_452');
+@include center-right('370_610_452');
+// 3 row
+@include bottom-left('370_610_452');
+@include bottom-center('370_610_452');
+@include bottom-right('370_610_452');
+// Message
+@include message-line('370_610_452');
+
+// 370_016_452
+// 1 row
+@include top-left('370_016_452');
+@include top-center('370_016_452');
+@include top-right('370_016_452');
+// 2 row
+@include center-left('370_016_452');
+@include center-center('370_016_452');
+@include center-right('370_016_452');
+// 3 row
+@include bottom-left('370_016_452');
+@include bottom-center('370_016_452');
+@include bottom-right('370_016_452');
+// Message
+@include message-line('370_016_452');
+
+// 360_710_542
+// 1 row
+@include top-left('360_710_542');
+@include top-center('360_710_542');
+@include top-right('360_710_542');
+// 2 row
+@include center-left('360_710_542');
+@include center-center('360_710_542');
+@include center-right('360_710_542');
+// 3 row
+@include bottom-left('360_710_542');
+@include bottom-center('360_710_542');
+@include bottom-right('360_710_542');
+// Message
+@include message-line('360_710_542');
+
+// 306_710_542
+// 1 row
+@include top-left('306_710_542');
+@include top-center('306_710_542');
+@include top-right('306_710_542');
+// 2 row
+@include center-left('306_710_542');
+@include center-center('306_710_542');
+@include center-right('306_710_542');
+// 3 row
+@include bottom-left('306_710_542');
+@include bottom-center('306_710_542');
+@include bottom-right('306_710_542');
+// Message
+@include message-line('306_710_542');
+
+// 307_610_542
+// 1 row
+@include top-left('307_610_542');
+@include top-center('307_610_542');
+@include top-right('307_610_542');
+// 2 row
+@include center-left('307_610_542');
+@include center-center('307_610_542');
+@include center-right('307_610_542');
+// 3 row
+@include bottom-left('307_610_542');
+@include bottom-center('307_610_542');
+@include bottom-right('307_610_542');
+// Message
+@include message-line('307_610_542');
+
+// 300_716_542
+// 1 row
+@include top-left('300_716_542');
+@include top-center('300_716_542');
+@include top-right('300_716_542');
+// 2 row
+@include center-left('300_716_542');
+@include center-center('300_716_542');
+@include center-right('300_716_542');
+// 3 row
+@include bottom-left('300_716_542');
+@include bottom-center('300_716_542');
+@include bottom-right('300_716_542');
+// Message
+@include message-line('300_716_542');
