@@ -1,6 +1,6 @@
 {
   "name": "sass-spa",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "CSS based single page application.",
   "scripts": {
     "start": "echo Something just happened!! O_o"
