@@ -1,14 +1,14 @@
 @mixin circle {
   &::before {
     content: 'O';
-    font-size: 15vh;
+    font-size: 15vmin;
     align-self: center;
   }
 }
 @mixin cross {
   &::before {
     content: 'X';
-    font-size: 15vh;
+    font-size: 15vmin;
     align-self: center;
   }
 }
@@ -28,7 +28,7 @@ $start: 'Start';
     content: $text;
     color: var(--main-color);
     text-shadow: 0 0 2rem var(--text-light-theme), 0 0 0.5rem var(--text-light-theme);
-    font-size: 10vh;
+    font-size: 10vmin;
     animation: none;
     animation: draw-win-line var(--animation-interval) ease-in-out var(--animation-delay-4) 1 normal
       both;

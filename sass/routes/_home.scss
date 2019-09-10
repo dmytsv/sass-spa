@@ -1,5 +1,5 @@
-$dot-size: 2.5rem;
-$shadow-width: 0.3rem;
+$dot-size: 2.5vmin;
+$shadow-width: 0.3vmin;
 @mixin filledDot {
   display: block;
   width: $dot-size;
@@ -26,7 +26,9 @@ $shadow-width: 0.3rem;
     border: solid $shadow-width var(--secondary-color);
   }
 }
-
+#home:target ~ #page-404 {
+  display: none;
+}
 #home:target {
   --animation-interval: 5s;
   --animation-time: calc(var(--animation-interval) * 3);
@@ -34,8 +36,8 @@ $shadow-width: 0.3rem;
   --animation-delay2: calc(var(--animation-interval) * 2);
   font-size: 2rem;
   display: grid;
-  grid-template-columns: 10vw 1fr repeat(3, 6rem) 1fr 10vw;
-  grid-template-rows: 2rem 5rem 1fr;
+  grid-template-columns: 10vw 1fr repeat(3, 5vmin) 1fr 10vw;
+  grid-template-rows: 2vmin 5vmin 1fr;
   width: 100%;
   height: 80vh;
   .home__switch__radio {

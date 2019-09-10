@@ -27,14 +27,16 @@ body {
 :root {
   --background-light-theme: #fffffe;
   --background-secondary-light-theme: #d6dde3;
-  --background-dark-theme: #000;
+  --background-dark-theme: #0e0e0e;
   --background-secondary-dark-theme: #322c2c;
   --main-light-theme: #3eabee;
   --secondary-light-theme: #0272b8;
   --main-dark-theme: #ff7844;
   --secondary-dark-theme: #e49272;
-  --text-light-theme: #000;
-  --text-dark-theme: #fff;
+  --text-light-theme: #0e0e0e;
+  --text-secondary-light-theme: #323234;
+  --text-dark-theme: #e6e2e2;
+  --text-secondary-dark-theme: #c7c1c1;
 }
 
 // Section config

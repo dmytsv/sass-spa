@@ -1,0 +1,38 @@
+section.p404 {
+  color: var(--main-color);
+  font-size: 3vmin;
+  display: grid;
+  grid-template-columns: 1fr 65vmin 1fr;
+  grid-template-rows: 20vh 40vmin 1fr;
+  background-color: transparent;
+  .p404__block {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 2vmin;
+    border: 1vmin solid var(--main-color);
+    padding: 3vmin;
+    background-color: transparent;
+    transform: rotate(5deg);
+  }
+  .p404__block--header {
+    color: inherit;
+    text-align: center;
+    background-color: transparent;
+  }
+  .p404__block--text {
+    color: inherit;
+    text-align: center;
+    background-color: transparent;
+    & > a:link {
+      display: block;
+      margin-top: 3vmin;
+      font-weight: bold;
+      font-size: 3.5vmin;
+    }
+  }
+}

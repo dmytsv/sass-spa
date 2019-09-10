@@ -69,6 +69,7 @@
     --main-color: var(--main-light-theme);
     --secondary-color: var(--secondary-light-theme);
     --text-color: var(--text-light-theme);
+    --text-secondary-color: var(--text-secondary-light-theme);
   }
   &:checked ~ * {
     --background-color: var(--background-dark-theme);
@@ -76,6 +77,7 @@
     --main-color: var(--main-dark-theme);
     --secondary-color: var(--secondary-dark-theme);
     --text-color: var(--text-dark-theme);
+    --text-secondary-color: var(--text-secondary-dark-theme);
   }
 }
 * {

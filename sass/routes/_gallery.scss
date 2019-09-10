@@ -6,6 +6,9 @@ $city-check: '#gallery__switch--city:checked ~ ';
 $animals-check: '#gallery__switch--animals:checked ~ ';
 $people-check: '#gallery__switch--people:checked ~ ';
 
+#gallery:target ~ #page-404 {
+  display: none;
+}
 @mixin background {
   background-image: var(--img-url);
   background-size: cover;
@@ -79,6 +82,7 @@ $people-check: '#gallery__switch--people:checked ~ ';
   left: 10vmin;
   z-index: 100;
 }
+
 .gallery {
   & span {
     display: none;

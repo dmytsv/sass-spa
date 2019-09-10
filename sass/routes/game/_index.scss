@@ -1,9 +1,12 @@
 @import 'game-mixins';
+#game:target ~ #page-404 {
+  display: none;
+}
 #game:target {
   display: grid;
-  grid-template-rows: 10vh repeat(3, 20vh) 1fr;
+  grid-template-rows: 10vh repeat(3, 20vmin) 1fr;
   grid-auto-rows: 0.5rem;
-  grid-template-columns: 1fr repeat(3, 20vh) 1fr;
+  grid-template-columns: 1fr repeat(3, 20vmin) 1fr;
   --animation-interval: 0.1s;
   --animation-delay-1: 0s;
   --animation-delay-2: calc(var(--animation-interval) * 2);
@@ -19,6 +22,7 @@
   i {
     transition: none;
     font-style: normal;
+    background-color: transparent;
   }
   .game__switch__label--000_010_000 {
     grid-row: 1/2;
@@ -29,7 +33,7 @@
     background-color: transparent;
     &::before {
       content: 'Re-Start';
-      font-size: 5rem;
+      font-size: 5vmin;
       color: var(--main-color);
     }
   }

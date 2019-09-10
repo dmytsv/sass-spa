@@ -1,0 +1,52 @@
+#about:target ~ #page-404 {
+  display: none;
+}
+#about:target {
+  display: grid;
+  font-size: 2.5vmin;
+  grid-template-columns: 1fr 85vw 1fr;
+  grid-template-rows: 5vh 1fr;
+  grid-gap: 1vh;
+  .about__block {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    &--header {
+      margin-bottom: 2vmin;
+      font-size: 3vmin;
+    }
+    &--text {
+      & > p {
+        margin-bottom: 1.5vmin;
+      }
+      & > p:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .qna {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    font-size: 2.5vmin;
+    margin-top: 5vmin;
+    color: var(--text-secondary-color);
+    &--header {
+      margin-bottom: 2vmin;
+      font-size: 3vmin;
+      color: var(--text-secondary-color);
+    }
+    & p {
+      margin-bottom: 1.5vmin;
+      font-style: italic;
+      color: var(--text-secondary-color);
+      & > i {
+        font-style: normal;
+      }
+    }
+    & > p:last-of-type {
+      margin-bottom: 0;
+    }
+    & > p > span {
+      font-weight: bold;
+    }
+  }
+}
