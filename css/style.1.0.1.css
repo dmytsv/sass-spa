@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -60612,4 +60613,39 @@ section.p404 .p404__block--text > a:link {
   font-weight: bold;
   font-size: 3.5vmin;
 }
-/*# sourceMappingURL=style.1.0.0.css.map */
+
+@media (max-width: 1023px) {
+  .navbar,
+  #home,
+  #gallery,
+  #game,
+  #about,
+  #page-404 {
+    display: none !important;
+  }
+  .background::after {
+    font-size: 4.5vw;
+    color: var(--main-color);
+    border-radius: 2vmin;
+    border: 1vmin solid var(--main-color);
+    padding: 3vmin;
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 20vh;
+    width: 90vw;
+    top: calc(50% - 10vh);
+    left: calc(50% - 45vw);
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+    content: 'Sorry small screens are not supported 😕';
+  }
+}
+/*# sourceMappingURL=style.1.0.1.css.map */

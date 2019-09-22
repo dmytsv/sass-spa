@@ -1,0 +1,27 @@
+@media (max-width: 1023px) {
+  .navbar,
+  #home,
+  #gallery,
+  #game,
+  #about,
+  #page-404 {
+    display: none !important;
+  }
+  .background::after {
+    font-size: 4.5vw;
+    color: var(--main-color);
+    border-radius: 2vmin;
+    border: 1vmin solid var(--main-color);
+    padding: 3vmin;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    width: 90vw;
+    top: calc(50% - 10vh);
+    left: calc(50% - 45vw);
+    transform: rotate(5deg);
+    content: 'Sorry small screens are not supported 😕';
+  }
+}
